@@ -1,0 +1,3572 @@
+/* 
++------------------------------------------------------------------------+
+| PLATINUM theme v.2 by (c) 2020 The_Quantum_Alpha (r/The_Quantum_Alpha) |
+| This may be covered under the GNU/Public token.                        |
+| Free to edit, copy, share, modify, reverse engineer, etc.              |
++------------------------------------+-----------------------------------+
+|     Created: 15h01 08/05/2020      |      Edited: 11h07 04/02/2021     |
++------------------------------------+-----------------------------------+
+|                                                                        |
+|  Colour scheme used:                                                   |
+|    Famous teal colour (texts, hovered borders, etc.):.#0060AC          |
+|    Hovered links:.....................................#007160          |
+|        Visited links:.................................#005345          |
+|    Report button, lol:................................#DD7680          |
+|    Light mode:                                                         |
+|        Body background: ..............................#DAE0E6          |
+|        Most borders: .................................#CCCCCC          |
+|        Most backgrounds: .............................#FFFFFF          |
+|        Link's background when hovered & misc.:........#EEEEEE          |
+|    Dark mode:                                                          |
+|        Body background: ..............................#111111          |
+|        Most borders: .................................#333333          |
+|        Most backgrounds: .............................#222222          | 
+|                                                                        |
++------------------------------------------------------------------------+
+*/
+
+
+/* PLATINUM v.1.5 */
+
+/*>>>>>>BODY<<<<<<*/
+
+  /* The entire body */
+  
+  body {
+    background-color: #DAE0E6;
+    background: url(%%background%%);
+    background-size: cover;
+    background-attachment: fixed; }
+body,a, button, caption, center, col, colgroup, dd, dir, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, input, hr, html, legend, li, listing, main, marquee, menu, nav, noframes, ol, p, plaintext, pre, section, summary, table, tbody, td, tfoot, th, thead, tr, ul, xm { cursor: url(%%pointer%%), default!important; }
+  
+  body .content { 
+      animation: .75s fadein1;
+      animation-name: fadein1; 
+      animation-duration: .75s; 
+      animation-iteration-count: 1; 
+      -webkit-animation-name: fadein1; 
+      -webkit-animation-duration: .75s; 
+      -webkit-animation-iteration-count: 1; }
+      
+   @keyframes fadein1 {
+0% {
+    opacity: 0;
+    transform: translateY(48px);
+    -webkit-transform: translateY(48px); }
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);}
+0% {
+    opacity: 0;
+    transform: translateY(48px);
+    -webkit-transform: translateY(48px); }
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); }
+0% {
+    opacity: 0;
+    transform: translateY(48px);
+    -webkit-transform: translateY(48px); }
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); } }
+    
+  .side {
+      animation-name: fadein2; 
+      animation-duration: .75s; 
+      animation-iteration-count: 1; 
+      -webkit-animation-name: fadein2; 
+      -webkit-animation-duration: .75s; 
+      -webkit-animation-iteration-count: 1; }
+      
+   @keyframes fadein2 {
+0% {
+    opacity: 0;
+    transform: translateX(48px);
+    -webkit-transform: translateX(48px); }
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);}
+0% {
+    opacity: 0;
+    transform: translateX(48px);
+    -webkit-transform: translateX(48px); }
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px); }
+0% {
+    opacity: 0;
+    transform: translateX(48px);
+    -webkit-transform: translateX(48px); }
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px); } }
+
+  .usertext .markhelp td { 
+      border: 1px solid #fff; 
+      color: #000;
+      background: #fff; }
+      
+  ::-webkit-scrollbar { 
+      width: 10px; 
+      padding: 2px;
+      background: transparent!important;
+      border-radius: 20px; }
+  ::-webkit-scrollbar-button { display:none!important }
+  ::-webkit-scrollbar-thumb {
+      background: ##0060AC;
+      border-radius: 20px; }
+  ::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 20px; }
+    
+
+  /* Improves the hover bubbles with user info */
+  
+  .hover-bubble {
+    display: none;
+    position: absolute;
+    background: white;
+    color: ##0060AC;
+    border: 1px solid #0060AC;
+    border-radius: 20px!important;
+    padding: 3px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    z-index: 100; 
+    transition:  0.25s ease; }
+  .author-tooltip__head {
+    padding: 16px 16px 8px;
+    background-color: #ffffff;
+    color: #000;
+    border-bottom: 1px solid #cccccc; }
+  .author-tooltip__head a,
+      .author-tooltip__head h3 {
+        color: #0060AC;
+        text-decoration: none; }
+    
+ 
+  /* Makes buttons themed as well */
+ 
+  button, html input[type="button"], 
+    input[type="reset"], 
+      input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+        background: #eeeeee;
+        border-radius: 20px!important;
+        border: 1px solid #eee;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        color: ##0060AC; }
+  button:hover, html input[type="button"]:hover, 
+    input[type="reset"]:hover, 
+      input[type="submit"]:hover {
+        border: 1px solid ##0060AC!important;
+        transition: 0.3s ease; }
+ 
+  #file {
+    -webkit-appearance: button;
+    cursor: pointer;
+      background: #eee;
+      border: 1px solid #eee;
+      border-radius: 20px!important;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 25px;
+      color: #0060AC; }
+  #file:hover {
+    border: 1px solid #0060AC!important;
+      transition: 0.3s ease; }
+
+  /* This block of strings makes buttons fancy!! ;) - Edited: u/Pinkisjustnumbers */
+
+    .pretty-form input[type="file"], 
+      .pretty-form input[type="password"], 
+        .pretty-form input[type="number"], 
+          .pretty-form select, 
+            .pretty-form b, 
+              .pretty-form button {
+                border: 1px solid #eee;
+                width: 100px;
+                height: 30px;
+                padding: 1px;
+                font-weight: bold!important;
+                color: #0060AC!important;
+                border-radius: 20px!important;
+                background: #eee;
+                  -webkit-box-shadow: none;
+                  -moz-box-shadow: none;
+                  box-shadow: none; }
+    .pretty-form input[type="file"]:hover, 
+      .pretty-form input[type="password"]:hover, 
+        .pretty-form input[type="number"]:hover, 
+          .pretty-form select:hover, 
+            .pretty-form b:hover, 
+              .pretty-form button:hover {
+                border: 1px solid #0060AC!important;
+                transition: 0.3s ease; }
+
+    .pretty-form input[type="text"] {
+                border: 1px solid #eee;
+                color: #0060AC!important;
+                border-radius: 20px!important;
+                background: #eee;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none; }
+    .pretty-form input[type="text"]:hover {
+                border: 1px solid #0060AC!important;
+                transition: 0.3s ease; }
+
+  #img-name {
+    border: 1px solid #eee;
+    width: 300px;
+    padding: 1px;
+    border-radius: 20px!important;
+    background: #eee; }
+  #img-name:hover {
+    border: 1px solid #0060AC!important;
+    transition: 0.3s ease; }
+
+  .nextprev a, 
+    .next-suggestions a {
+      padding: 1px 4px;
+      background: #eee;
+      border: 1px solid #eee;
+      border-radius: 20px!important;
+      font-weight: bold; }
+
+      
+    /* This is to make most text boxes in light theme... light! XD - Edited: u/Pinkisjustnumbers */
+
+  .linefield textarea, 
+    .linefield input[type=text], 
+      .linefield input[type=password] {
+        font-size: 100%;
+        width: 492px;
+        padding: 3px;
+        margin: 0;
+        border: 1px solid #eee;
+        border-radius: 20px!important;
+        background: #eee;
+        color: #333333; }
+  .linefield textarea:hover, 
+    .linefield input[type=text]:hover, 
+      .linefield input[type=password]:hover {
+        border: 1px solid #0060AC!important;
+        transition: 0.3s ease; }
+
+  .side input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: 1px solid #eee;
+      outline: none;
+      display: block;
+      position: relative;
+      float: left;
+      margin: 9px 5px 0 11px;
+      box-shadow: none;
+      background-color: #e5e5e5;}
+
+  .side input[type="checkbox"]:checked {
+     border-color:1px solid #eee;
+     background-color:#0060AC; }
+
+  .help-hoverable {
+    display: none;
+    cursor: help;}
+ 
+  .md .md-spoiler-text:not(.revealed) { border-radius: 20px; }    
+  
+  .flairselector { border-radius: 20px; }
+
+  .usertext .help-toggle, 
+      .usertext a.reddiquette { 
+          border: 1px solid #eee; 
+          border-radius: 20px; 
+          padding: 1px 1px 1px 1px;
+          margin-top: 5px; 
+          margin-left: 0px; 
+          margin-right: 10px;
+          background: #eee; }
+  .usertext .help-toggle:hover, 
+      .usertext a.reddiquette:hover { 
+          border: 1px solid #0060AC!important;
+          color: #0060AC!important;
+          transition: 0.3s ease; }
+
+  .c-btn-primary { 
+      background-color: #eee; 
+      border: 1px solid #0060AC; 
+      color: #0060AC; 
+      border-radius: 20px; }
+  .c-btn-primary:hover {  
+      background: #0060AC!important; 
+      color: #eee!important; }
+
+  textarea#stylesheet_contents { 
+      border: 1px solid #0aa18b;
+      border-radius: 20px; }
+
+
+/*>>>>>>POST LIST<<<<<<*/
+
+  /* All posts. All. Just all of them. */
+
+  .sitetable { margin: 10px 315px 0 5px; }
+  
+
+  /* Every single tiny posts */
+  
+  .link { 
+      background: white; 
+      padding: 10px; 
+      border: 1px solid #fff;
+      border-radius: 20px!important; }
+  
+
+  /* Every single tiny posts > Titles */
+
+  .link .title { margin-bottom: 5px; }
+    .sitetable a, .thing .title { color: #0060AC; }
+      .sitetable a:hover, .thing .title:hover { color: #0060AC; }
+        .sitetable a:visited, .thing .title:visited { color: #0060AC; }
+
+        
+  /* Every single tiny posts > Info, links */
+
+  .link .tagline, .search-result-meta { font-size: 11px; }
+  .link .entry .buttons li a { 
+      padding: 1px 3px 1px 3px;
+      border: 1px solid transparent!important;
+      opacity:0.2;}
+  a.bylink.comments.empty.may-blank, a.post-sharing-button { 
+      opacity: 1 !important; 
+      color: #0060AC; }
+  a.bylink.comments.may-blank {  opacity: 1 !important; }
+  .entry .buttons li+li { padding-left: 0px; }
+  .link:hover .entry .buttons li a { 
+      opacity: 1;
+      padding: 1px 3px 1px 3px;
+      border: 1px transparent;
+      transition: 0.3s; }
+  .entry .buttons li a:hover { 
+      opacity: 1;
+      text-decoration:none!important;
+      padding: 1px 3px 1px 3px;
+      border: 1px solid!important;
+      transition: 0.1s;
+      border-radius: 20px; }
+  .entry .buttons li a { 
+      padding: 0 3px; 
+      border: 1px solid transparent!important; }
+
+ .likes.entry > .top-matter > .tagline > .stickied-tagline,
+      .unvoted.entry > .top-matter > .tagline > .stickied-tagline {
+          border-left: 4px solid #0060AC!important;
+          background: rgba(182, 201, 221, 0.23);
+          color: #0060AC;
+          padding-left: 3px;
+          padding-right: 3px;
+          font-weight: bold;
+        border-radius: 20px; }
+
+
+  /* Every single tiny posts > domain (removes it) */
+
+  .domain {
+    display: none; }
+
+      
+  /* Every single tiny posts > Thumbnail */
+
+  .thumbnail { 
+      width: 70px; 
+      height: 50px; 
+      margin: 0 15px 0 5px;
+        border-radius: 20px!important; }
+  a.thumbnail img { 
+      min-width: 100%;
+      min-height: 100%;
+      height: auto;
+      width: auto;
+      background-position: center;
+      position: absolute;
+        border-radius: 20px!important;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  a.thumbnail.invisible-when-pinned.may-blank.loggedin { background-color: #CCCCC7; }
+
+  
+  /* Every single tiny posts> Post preview, post */
+
+  .link .usertext-body .md { 
+      border: 1px solid #eee; 
+      background: #eee; 
+      border-radius: 20px!important; }
+
+  .expando-button { border-radius: 50%!important; }
+
+  .crosspost-preview {
+      overflow: hidden;
+      background: #eee;
+      border: none;
+      border-radius: 20px;
+      max-width: 600px; }
+
+      
+  /* Every single tiny posts > Announcements (STICKY POST)*/
+
+  .thing.stickied.link { 
+      background: #EEEEEE; 
+      border: 1px solid transparent; }
+  .thing.stickied.link a.title, .tagline .stickied-tagline, .search-result-meta .stickied-tagline { color: #0060AC; }
+  .tagline .stickied-tagline {
+      color: #0060AC; 
+      border-left: 4px solid #0060AC!important;
+      background: rgba(182,201,221,0.23);
+      color: #0060AC;
+      padding: 1px 3px 1px 0px;
+      font-weight: bold;
+      border-radius: 20px;}
+
+  
+    /* Every single tiny posts > Reports, spam, remove, approve,ignore reports buttons */
+
+  .entry .buttons li.reported-stamp,
+    .pretty-button.negative,
+      .pretty-button.neutral,
+        .pretty-button.positive { 
+            border: 1px solid #CCCCCC !important; 
+            border-radius: 20px!important; }
+  .entry .buttons li.reported-stamp { color: white; }
+  .entry .buttons li.reported-stamp { background: #ff0000 }
+  .pretty-button.negative,
+    .pretty-button.neutral,
+      .pretty-button.positive { background: #EEEEEE; }
+      
+  .report-button a { 
+      text-decoration: none !important;
+      color: #dd7680!important;
+      padding: 3px 3px 1px 3px!important;
+      border: 1px solid transparent; }
+  .report-button a:hover { 
+      color: #dd7680;
+      padding: 3px 3px 1px 3px!important;
+      border-radius: 20px;
+      border: 1px solid #dd7680; }
+      
+      
+    /*author*/
+    
+  a.author { 
+      text-decoration: none !important;
+      padding: 3px 3px 1px 3px!important;
+      border: 1px solid transparent; }
+  a.author:hover { 
+      color: #0060AC;
+      padding: 3px 3px 1px 3px!important;
+      border-radius: 20px;
+      transition: 0.3s ease;
+      border: 1px solid #0aa18b; }
+      
+      
+       /*comment button*/
+
+  .likes.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink, 
+      .unvoted.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink { 
+          text-decoration: none !important; 
+          border-radius: 20px;
+          background: #eee;
+          border: 1px solid #eee!important; }
+      
+  .likes.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink:hover, 
+      .unvoted.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink:hover { 
+          border: 1px solid #0060AC!important; 
+          color: #0060AC;
+        border-radius: 20px!important; }
+        
+        
+      /*give award button*/
+      
+  .buttons .give-gold.gold-give-gold { 
+      text-decoration: none !important; 
+      padding: 3px 3px 1px 3px;
+      border: 1px solid transparent; }
+  .buttons .give-gold.gold-give-gold:hover { 
+      border: 1px solid #a79128;
+      border-radius: 20px!important; }
+      
+  .awarding-icon {
+      max-width: 20px;
+      max-height: 20px;
+      vertical-align: -3px;
+      border-radius: 20px; 
+      border: 1px solid transparent; }
+      
+  .awardings-bar {
+      animation-name: fadein3; 
+      animation-duration: .75s; 
+      animation-iteration-count: 1; 
+      -webkit-animation-name: fadein3; 
+      -webkit-animation-duration: .75s; 
+      -webkit-animation-iteration-count: 1; 
+      margin-right: 0px;
+      background: #eeeeee;
+      border-radius: 20px;
+      float: right; }
+  .awarding-icon-container {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      margin-right: 2px; }
+      
+      
+      /*sharing button*/
+      
+  .post-sharing,
+     .post-sharing .post-sharing-main .c-form-group .post-sharing-label,
+        .c-form-control {
+            background: #eee;
+            border: 1px solid #eee;
+            border-radius: 20px!important;
+            color: #0060AC!important; }
+            
+      
+  /* Media stuffs (semi-floating videos) */
+
+  @media only screen and (max-width: 700px) {
+    .side { display: none; }
+    .sitetable { margin-right: 10px; } }
+ 
+  .media-preview img { border-radius: 20px!important; }
+
+    
+  /* End of Posts list */
+
+  
+  
+/*>>>>>>SIDEBAR<<<<<<*/
+
+  /* Sidebar */
+
+ .sr_style_toggle.toggle {display:none;}
+
+  .side { 
+      background: transparent; 
+      margin: 10px 10px 0 0;
+        border-radius: 20px!important; }
+  .side { color: #0060AC; }
+  .side a, .footer a { 
+      color: #0060AC;
+      border-radius: 20px!important; }
+  .side .spacer { margin: 0 0 10px 0; }
+  
+
+  /* Sidebar > Search */
+
+  .side #search input[type=text] { 
+      border: 1px solid #fff;
+      border-radius: 20px!important; }
+  .side #search input[type=text]:hover { 
+      border: 1px solid #0060AC!important;
+      transition: 0.3s ease; }
+  #searchexpando { 
+      border: 1px solid #fff; 
+      border-radius: 20px!important; 
+      background: white; }
+
+  /* Sidebar > Submit Buttons */
+
+  .morelink { 
+      border: 1px solid #fff;
+      background: none!important;
+      border-radius: 20px!important; }
+  .morelink a {
+      border-radius: 20px!important; 
+      background: white; }
+  .morelink a:after { 
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            z-index: 98;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.24);
+            background-color: #0060AC;
+            border-radius: 20px!important;
+            border: 1px solid #0060AC;
+            color: #FFF;
+            content: "Create new post!";
+            padding: 0px 12px; }
+  .morelink a:hover:after {
+            border-radius: 20px!important;
+            background-color: #07796a;
+            border: 1px solid;
+            transition: 0.3s ease-in-out; }
+        .account-activity-box,
+        .sidebox.create,
+  .morelink .nub { display: none; }
+  .morelink:hover a { 
+      color: #0060AC; 
+      border: 1px solid #0aa181;
+      border-radius: 20px!important; }
+
+  .morelink:after {
+      content: "Please read the rules! Thank you! No NSFW";
+      padding: 16px;
+      width: 267px;
+      position: absolute;
+      right: -3px;
+      margin-top: 0px;
+      display: block;
+      background-color: #ffffff;
+      color: #0060AC;
+      letter-spacing: 1px;
+      z-index: 100;
+      opacity: 0;
+      transition: all 0.25s ease;
+      transition-delay: 0s;
+      font-weight: normal;
+      line-height: 1.4em;
+      border-radius: 20px!important;
+      border: 1px solid #0060AC;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+      visibility: hidden;
+      pointer-events: none; }
+
+  .morelink:hover:after {
+      margin-top: 16px;
+      opacity: 100;
+      visibility: visible;
+      transition-delay: 0.25s; }
+
+
+  /* Sidebar > Submit Buttons > Moderators only */
+
+  .submit.mod-override .morelink a:after {
+      background: url(%%spritesheet%%);
+      background-position: -5px -106px; }
+
+
+  /* Sidebar > Get Reddit Premium */
+  
+  .premium-banner-outer {
+    display: none;
+    clear: both;
+    overflow: hidden;}
+    
+    
+  /* Sidebar > Image */
+
+  .titlebox { 
+      padding: 10px; 
+      background: white;
+      border-radius: 20px!important;
+      border: 1px solid #fff;}
+  .titlebox .redditname { 
+      text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+      border-radius: 20px!important;
+     font-size: 25px;
+     font-variant: small-caps;
+     text-align: center;
+     background: url(%%banner%%);
+     background-size: cover;
+     background-position: center;
+     padding: 20px 0;
+     margin: -11px -11px 5px -11px;
+     word-break: break-all;
+     padding: 20px 15px; }
+    .titlebox h1 a { 
+        color: white; 
+        top: 25px; 
+        font-weight: normal; 
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        text-decoration:none!important; }
+    .titlebox h1 a:hover { 
+        color: #fff; 
+        text-shadow: 2px 2px 20px #0060AC, 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8);
+        transition: 0.7s ease-in-out; }
+
+       
+  /* Sidebar > Subscribe button */
+
+  a.option.add.active { 
+      background: #eee !important; 
+      font-weight: bold; 
+      height: 29px; 
+      font-size: large; 
+      line-height: 29px; }
+  a.option.add.active:hover { background: #0cccb3 !important; }
+  
+  
+  /* Sidebar > Unsubscribe button */
+
+  .titlebox .subscribe-button .active {
+    background: #eee;
+    border: 0;
+    border-radius: 20px!important;
+    color: #555;
+    display: block;
+    padding: 0;
+    text-align: center;
+    width: 278px;
+    font-weight: normal;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    margin: 5px 0; }
+    .titlebox .subscribe-button .active:hover { background: #84d0c7; }
+
+    
+  /* Sidebar >  Readers, users here now */
+
+.side span.number, .linkinfo .views .view-count  { 
+    color:#0060AC;
+    font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: .5px;
+  margin-left: 0px;}
+.side .users-online span.number  { margin-left: 0px; }
+.side .subscribers { 
+  color: #0060AC;
+  font-size: 14px;
+  padding: 1px 2px;
+  border: 1px solid #eee;
+  background: #eee;
+  display: inline-block;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  letter-spacing: .5px;
+  text-align: center;
+  width:128px; }
+.side .subscribers .word,
+    .side .users-online .word {
+        display: block;
+        margin-left: 0px; }
+
+.side .users-online .word { margin-left: 0px; }
+
+.side .subscribers .word,
+.side .users-online .word{ font-size: 0px; }
+
+.side .subscribers .word:after {
+    font-size: 14px;
+    content: "Fans"; }
+.users-online:after {
+    font-size: 14px;
+    content: "Online" }
+.side .users-online {
+  color: #0060AC;
+  font-size: 14px;
+  padding: 1px 2px;
+  border: 1px solid #eee;
+  background: #eee;
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 10px;
+  letter-spacing: .5px;
+  border-radius: 20px;
+  text-align: center;
+  width:128px; }
+.side .users-online:before { display: none; }
+
+  
+  /* Sidebar > Moderator: "you are a moderator of this subreddit." */
+
+  .leavemoderator { margin-top: -5px;}
+  .titlebox form.toggle, .leavemoderator { font-size: 11px; }
+
+  
+  /* Sidebar > Icons ("you are a moderator of this subreddit, you are an approved submitter on this subreddit") */
+
+  .titlebox .leavemoderator { display:none; }
+  .titlebox .leavemoderator:before { 
+        background: url(%%spritesheet%%); 
+        background-position: -5px -106px;
+        margin: 8px 8px 0px 0px; 
+        float: right }
+
+    /*REMOVED*/
+  /*.titlebox form.leavecontributor-button:before { 
+      background: url(%%spritesheet%%); 
+      background-position: -5px -81px; }*/
+    /*END OF REMOVED*/
+
+  .titlebox form.leavecontributor-button { display:none; }
+  .flairtoggle.toggle > label { display: none; }
+
+  .titlebox .tagline { 
+      border: 1px solid #eee;
+      background: #eee;
+      margin: 5px 0px 9px 0px;
+      border-radius: 20px; 
+      display: block;
+      padding: 5px 0px 2px 0px; }
+      
+
+  /* Sidebar > Description */
+  
+  /* join our discord button */
+
+  .side h2:nth-of-type(1) a { 
+      cursor: default;
+      display: block;
+      margin: 0 0 5px 0; 
+      padding: 30px; 
+      font-size: 17px; 
+      font-weight: bold; 
+      background-image: url(%%discord%%);
+      background-size: cover;
+      background-position: center;
+      border: none!important; 
+      color: transparent; 
+      border-radius: 20px!important;
+      text-align: center; 
+      text-decoration: none;
+      cursor: default; }
+  .side h2:nth-of-type(1) a:hover { 
+      background-image: url(%%discord%%);
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0;  
+      cursor: pointer; 
+      color: transparent;
+      transition: 0.3s ease; }
+
+  .side h2:nth-of-type(1) a:after {
+      content:""; 
+      background-image: url(%%img%%);
+      background-size: cover;
+      background-position: center;
+      width: 255px;
+      height: 255px;
+      position: absolute;
+      right: 31px;
+      margin-top: 0px;
+      display: block;
+      z-index: 100;
+      opacity: 0;
+      transition: all 0.25s ease;
+      transition-delay: 0s;
+      font-weight: normal;
+      line-height: 1.4em;
+      border-radius: 20px!important;
+      border: 1px solid transparent;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+      visibility: hidden;
+      pointer-events: none; }
+
+  .side h2:nth-of-type(1) a:hover:after {
+      margin-top: 40px;
+      opacity: 100;
+      visibility: visible;
+      transition-delay: 0.25s; }
+   
+
+   /* other buttons */
+
+  .side h2 a { 
+      cursor: default;
+      display: block;
+      margin: 0 0 5px 0; 
+      padding: 3px; 
+      font-size: 17px; 
+      font-weight: bold; 
+      background: #0060AC;
+      border: none!important; 
+      color: #fff; 
+      border-radius: 20px!important;
+      text-align: center; 
+      text-decoration: none;
+      cursor: default; }
+  .side h2 a:hover { 
+      background:#07796a;
+      box-shadow: 0 0;  
+      cursor: pointer; 
+      color: #ffffff;
+      transition: 0.3s ease; }
+
+  /*.side h2 a:after {
+      content: "Please do. Please, just do it! Omg! Omg!";
+      padding: 16px;
+      width: 223px;
+      position: absolute;
+      right: 31px;
+      margin-top: 0px;
+      display: block;
+      background-color: #ffffff;
+      color: #0060AC;
+      letter-spacing: 1px;
+      z-index: 100;
+      opacity: 0;
+      transition: all 0.25s ease;
+      transition-delay: 0s;
+      font-weight: normal;
+      line-height: 1.4em;
+      border-radius: 20px!important;
+      border: 1px solid #0060AC;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
+      visibility: hidden;
+      pointer-events: none; }
+
+  .side h2 a:hover:after {
+      margin-top: 16px;
+      opacity: 100;
+      visibility: visible;
+      transition-delay: 0.25s; }*/
+
+
+  /* rules */
+
+  .side .md { 
+      border: 1px solid #eee; 
+      background: #eee;
+      margin: 5px 0;
+      border-radius: 20px!important;
+      padding: 10px; }
+  .side .usertext h3 {
+	  margin: 0 0 5px 0;
+	  padding: 10px;
+	  font-size: 12px;
+	  font-weight: bold;
+      border-radius: 20px!important;
+	  background: #eee;
+	  /*box-shadow: 1px 1px 0 #DDD inset;*/
+	  border-bottom: 1px solid #b0bec5;
+	  color: #0060AC;
+      cursor: default; }
+  .side .usertext h3:hover { 
+      box-shadow: 0 0; 
+      background: #0060AC; 
+      cursor: default; 
+      color: #ffffff;
+      transition: 0.3s ease-in-out; }
+         /* Animation */
+  .side .usertext h3 + ul {
+	  margin-top: -30px;
+	  padding: 0 0 0;
+	  margin: -5px 0 0 0;
+	  z-index:99999;
+	  position: relative;
+	  max-height: 0;
+	  border:none;
+	  /* border-bottom: none; */
+	  border-width:0 1px 0px 1px;
+      background: #fff;
+	  overflow:hidden;
+      border-radius: 20px!important;
+	  transition: all 1s 0.4s ease-in-out;
+	  -moz-transition: all 1s 0.4s ease-in-out;
+	  -webkit-transition: all 1s 0.4s ease-in-out;
+	  -o-transition: all 1s 0.4s ease; }
+  .side .usertext h3 + ul li { 
+      display: block; 
+      margin:0; 
+      border-radius: 20px!important;
+      padding: 5px 15px; 
+      font-size: 11px; 
+      line-height: 15px; 
+      cursor: default; }
+  .side .usertext h3:hover + ul, .side .usertext h3 + ul:hover { 
+      max-height: 900px; 
+      border-width:0 1px 1px 1px; }
+  .side .usertext h3 + ul li p { 
+      margin: 0; 
+      margin-left: 16px; 
+      position: relative; 
+      color: #0060AC; }
+  .side .usertext h3 + ul li p:before { 
+      content: "-"; 
+      position: absolute; 
+      left: -9px; 
+      color: #aaa;
+      top: 0; }
+
+
+  /* Sidebar > Created by, Subreddit age */
+
+  .titlebox .bottom { 
+      border: 0; 
+      margin-top: -4px; 
+      font-size: 11px; }
+  .titlebox .age { 
+      font-size: 0px; 
+      margin-top: 1px; }
+  .titlebox .age time:after { content: " ago"; }
+  .titlebox .age time { font-size: 11px !important; }
+
+
+  /* Sidebar > Sideboxes (moderations crap (tools), Moderators, Recently viewed crap */
+
+  .sidecontentbox .content { 
+      background: white; 
+      padding-left: 10px;
+      border-radius: 20px!important;
+      border: 1px solid #fff; }
+
+      
+  /* Sidebar > Moderation tools */
+
+  .sidecontentbox .collapse-button {
+      display: inline-block;
+      width: 50px;
+      height: 10px;
+      line-height: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      background: #ffffff;
+      color: #0060AC;
+      border: 1px solid #fff;
+      border-radius: 20px!important;
+      margin: 6px 8px;
+      vertical-align: bottom; } 
+  .icon-menu a { 
+      background: transparent;
+      text-decoration: none!important;
+      border-radius: 20px!important;
+      padding: 4px 60px 4px 1px; }
+   .icon-menu li { 
+       margin: 5px 0; 
+       border: 1px solid transparent; 
+       padding: 3px 0px 3px 2px; 
+       text-decoration: none !important; }
+   .icon-menu li:hover {  
+       border: 1px solid transparent!important;
+       background: #eeeeee;
+       border-radius: 20px!important;
+       transition: 0.3s ease-in-out; }
+       
+
+  
+  /* MESSAGE ALL MOD BUTTON */
+
+  .side .helplink {
+      background: white;
+      background-size: 18px;
+      border: 1px solid #fff;
+      border-radius: 20px!important;
+      box-sizing: content-box;
+      color: #0060AC;
+      padding: 5px 9px!important;
+      display: block!important;
+      width: 280px!important;
+      height: 100;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: capitalize;
+      text-align: center!important;
+      margin-bottom: 5px!important; }
+  .side .helplink:hover { 
+      background-color: white; 
+      border: 1px solid #0aa181; 
+      color: #0060AC; 
+      border-radius: 20px!important; }
+
+      
+  /* allmod > PLEASE MESSAGE ALL MODS */
+
+  .side a.helplink+.title+.content { position: relative }
+  .side a.helplink+.title+.content:hover:before {
+    position: absolute;
+    border-radius: 20px!important;
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    padding: 0 10px;
+    background: rgba(0,0,0,.7);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    content: "Please message ALL mods, not just one directly. Thank you very much!";
+    text-align: center;
+    animation: allmod 5s linear; }
+
+  @keyframes allmod {
+    0% { bottom: 0; padding: 10px }
+    80% { bottom: 0; padding: 10px }
+    100% { bottom: 100% } }
+
+    
+    /* MODERATION e.g. Spam highlight, etc */
+    
+  ul.report-reasons {
+    width: 80%;
+    background-color: #cccccc;
+    border: 1px #0060AC;
+    border-radius: 20px!important;
+    display: none; }
+  .thing.spam { 
+      background-color: #ffffff; 
+      border-color: #ff0004!important; } 
+
+      
+  /* Sidebar > Create your own subreddit */
+
+  .sidebox .spacer { display: none !important; }
+
+  
+  /* Sidebar > Recently viewed links */
+
+  .gadget .reddit-entry { margin-top: 5px; }
+  .gadget .score { margin-left: 0; }
+
+  
+  /* Sidebar > Login, register */
+
+  .login-form-side { 
+      background: white; 
+      border: 1px solid #fff;
+      border-radius: 20px!important; }
+
+  
+     /* Hey! Please don't remove or change this!!!!!! -T.Q.A, */
+
+  .side:after {
+            display: block;
+            margin: 2px 0px;
+            padding: 2px 0px;
+            color: #0060AC;
+            content: "★Pʟ∆ᴛɪɴᴜᴍ★ CSS theme by u/The_Quantum_Alpha!";
+            text-transform: none;
+            font-size: 12px;
+            font-family: arial, sans-serif;
+            position: absolute;
+            width: 300px;
+            text-align: center; }
+
+
+  /* End of Sidebar */
+
+  
+  
+  
+/*>>>>>>HEADER<<<<<<*/
+
+  /* Whole header + Bottom navigation bar */
+
+  #header {
+    height: 200px;
+    /*margin: 10px 10px 0 10px;*/
+    background: url(%%banner%%);
+    background-position: center;
+    background-size: cover;
+    border: 0; 
+      animation-name: fadein4; 
+      animation-duration: .75s; 
+      animation-iteration-count: 1; 
+      -webkit-animation-name: fadein4; 
+      -webkit-animation-duration: .75s; 
+      -webkit-animation-iteration-count: 1; }
+      
+ @keyframes fadein3 {
+0% {
+    opacity: 0;
+    transform: translateX(-48px);
+    -webkit-transform: translateX(-48px); }
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);}
+0% {
+    opacity: 0;
+    transform: translateX(-48px);
+    -webkit-transform: translateX(-48px); }
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px); }
+0% {
+    opacity: 0;
+    transform: translateX(-48px);
+    -webkit-transform: translateX(-48px); }
+100% {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px); } }
+
+                                  
+  /* Header > Banner image (REMOVED) */  
+
+  /*#header:before {                        
+    content: '';                              
+    position: absolute;                       
+    width: 512px;                              
+    height: 176px;                             
+    left:50%;                                  
+    margin-top: 60px;                          
+    -webkit-transform: translateX(-50%);      
+    transform: translateX(-50%);                
+    z-index: -1;                                
+    background-image: url(%%background%%);     
+    top:-44px; }*/                          
+
+    
+  /* Header > Navigation > Top navigation */
+
+  #sr-header-area {
+    border-bottom: 0;
+    position: inherit;
+    margin-right: 55px; 
+    background: transparent }
+  #sr-header-area a { color: #CCCCCC; } 
+  #sr-header-area a:hover { 
+    color: #CCCCCC;
+    text-decoration:none!important;
+    font-size: 17px;
+    transition: 0.2s ease-in-out; } 
+  #header:hover #sr-header-area {
+    padding: 10px 0;
+    background: rgba(0,0,0,0.5);
+    border-right: 55px solid rgba(0,0,0,0);
+    margin-right: 0px; }
+
+    
+  /* Header > Navigation > Top navigation > Get new Reddit */
+
+  #sr-header-area .redesign-beta-optin {
+    display: none;
+    background: transparent;
+    width: auto;
+    color: #33ccb1;
+    margin: 1px -15px 0 10px; } 
+  #sr-header-area .redesign-beta-optin:before { display: none; }
+  #sr-header-area .redesign-beta-optin:after { display: none; }
+
+  
+  /* Header > Navigation > Top navigation > My subreddits dropdown */
+
+  .dropdown.srdrop .selected { color: #CCCCCC; }
+  #sr-header-area .drop-choices.srdrop a { 
+    background: rgba(0,0,0,0.5); 
+    color: #ccc;
+    border-radius: 20px!important;
+    border:0.5px solid #000!important; }
+  #sr-header-area .drop-choices.srdrop a:hover { 
+    color: white; 
+    background: #0060AC;
+    border-radius: 20px!important;
+    font-size: 15px; }
+  #sr-header-area a, .dropdown.srdrop .selected { 
+    font-size: 11px; 
+    text-transform: lowercase;
+    transition: all 0.2s ease-in-out; }
+  #sr-header-area .redesign-beta-optin { font-size: 11px; }
+  #sr-header-area .drop-choices.srdrop { 
+    border: none!important; 
+    margin-top: 10px;
+    background: none; }
+  .drop-choices.inuse { 
+    background: none;
+    border: none; }
+    
+    
+  /* Header > Navigation > Top navigation > Edit button */
+
+  #sr-more-link { 
+    background: transparent; 
+    padding: 0 10px 0 10px; 
+    right: -51px;}
+  a#sr-more-link { width: 31px; }
+
+  
+  /* Header > Navigation > Bottom-left navigation */
+
+  #header-bottom-left { 
+    margin-top: 156px; 
+    height: 26px; 
+    background: transparent; }
+  #header:hover #header-bottom-left { 
+    background: rgba(0,0,0,0.5); 
+    transition: .3s; 
+    margin-top: 124px; 
+    padding: 6px 0; }
+  #header-bottom-left .tabmenu { 
+    margin-left: 10px; 
+    margin-top: 0; }
+  #header:hover #header-bottom-left .tabmenu { 
+    margin-left: 10px; 
+    margin-top: 0px; }
+
+    
+  /* Header > Navigation > Bottom-left navigation > Reddit Icon */
+
+  #header-img.default-header { display: none; }
+        
+        
+  /* Header > Navigation > Bottom-left navigation > Links > Icons */
+
+  .tabmenu li.selected a { 
+      background: transparent; 
+      border: 0; }
+  .tabmenu li a { 
+      background: transparent; 
+      color: #CCCCCC; }
+  #header-bottom-left .tabmenu li a {
+    font-size: 0;
+    width: 16px!important;
+    height: 16px!important;
+    display: inline-block;
+    vertical-align: top;
+    background: url(%%spritesheet%%);
+    margin-top: 5px;
+    padding: 0px;
+    margin-right: 10px; }
+  #header .tabmenu li a { background-position: -81px -30px; }
+  #header .tabmenu li.selected a { background-position: -107px -30px; }
+  #header .tabmenu li a[href*="/new"] { background-position: -107px -55px; }
+  #header .tabmenu li.selected a[href*="/new"] { background-position: -56px -55px; }
+  #header .tabmenu li a[href*="/rising"] { background-position: -81px -81px; }
+  #header .tabmenu li.selected a[href*="/rising"] { background-position: -107px -81px; }
+  #header .tabmenu li a[href*="/controversial"] { background-position: -55px -5px; }
+  #header .tabmenu li.selected a[href*="/controversial"] { background-position: -81px -5px; }
+  #header .tabmenu li a[href*="/top"] { background-position: -133px -55px; }
+  #header .tabmenu li.selected a[href*="/top"] { background-position: -133px -81px; }
+  #header .tabmenu li a[href*="/gilded"] { background-position: -131px -5px; }
+  #header .tabmenu li.selected a[href*="/gilded"] { background-position: -132px -30px; }
+    /* REMOVED (display:none) */
+  #header .tabmenu li a[href*="/wiki"] { display:none; background-position: -81px -107px; }
+  #header .tabmenu li.selected a[href*="/wiki"] { display:none; background-position: -133px -107px; }
+    /* END OF REMOVED */
+  #header .tabmenu li a[href*="/duplicates"] { background-position: -81px -107px; }
+  #header .tabmenu li.selected a[href*="/duplicates"] { background-position: -133px -107px; }
+  #header .tabmenu li a[href*="/comments"] { background-position: -5px -5px; }
+  #header .tabmenu li.selected a[href*="/comments"] { background-position: -30px -5px; }
+
+  
+  /* Header > Navigation > Bottom-right navigation */
+
+  #header-bottom-right { 
+    bottom: -1px; 
+    background: transparent; 
+    margin-right: 10px; }
+ #header:hover #header-bottom-right { 
+   bottom: 5px; 
+   transition: .3s; }
+
+   
+  /* Header > Navigation > Bottom-right navigation > Icons */
+
+  #mail.nohavemail {
+    top: 5px;
+    background: url(%%spritesheet%%);
+    background-position: -106px -5px;
+    height: 16px;
+    width: 16px; }
+  #mail.havemail {
+    top: 5px;
+    background: url(%%spritesheet%%);
+    background-position: -5px -30px;
+    height: 16px;
+    width: 16px; }
+  #chat {
+    margin-left: 2px;
+    background: url(%%spritesheet%%);
+    background-position: -5px -5px;
+    height: 16px;
+    width: 16px; }
+  #chat.active { background: url(%%spritesheet%%);
+    background-position: -30px -5px;
+    height: 16px;
+    width: 16px; }
+  .user, a.pref-lang.choice, .logout a { font-size: 0; }
+  #header .user>a, a.pref-lang.choice, .logout a {
+    width: 16px!important;
+    height: 16px!important;
+    display: inline-block;
+    vertical-align: top;
+    background: url(%%spritesheet%%); 
+    margin-top: 5px; }
+  .logout a { 
+      background-position: -31px -55px; 
+      margin-top: 4px; }
+  a.pref-lang.choice { 
+      background-position: -107px -106px; 
+      margin-top: 3px; }
+  #header .user>a { 
+    background-position: -30px -107px; 
+    margin-top: 4px; }
+  #header-bottom-right a { color: #CCCCCC; }
+  #new_modmail.havemail, #new_modmail.nohavemail, #modmail.havemail, #modmail.nohavemail { background: url(%%spritesheet%%); }
+  #new_modmail.havemail {
+    background-position: -55px -106px; 
+    padding-right: 4px; }
+  #new_modmail.nohavemail { background-position: -6px -106px; }
+  #modmail.havemail { background-position: -56px -81px; }
+  #modmail.nohavemail { background-position: -30px -81px; }
+  #header #sr-header-area,
+    #header #header-bottom-left .tabmenu li a,
+      #header #new_modmail.nohavemail,
+        #header #modmail.nohavemail,
+          #header .user>a,
+            #header a.pref-lang.choice,
+              #header .logout a,
+                #header #chat,
+                  #header #mail.nohavemail {
+                    opacity: 0.2; }
+  #header:hover #sr-header-area,
+    #header:hover #header-bottom-left .tabmenu li a,
+      #header:hover #new_modmail.nohavemail,
+        #header:hover #modmail.nohavemail,
+          #header:hover .user>a,
+            #header:hover a.pref-lang.choice,
+              #header:hover .logout a,
+                #header:hover #chat,
+                  #header:hover #mail.nohavemail,
+                    #chat.active {
+                      opacity: 1;
+                      transition: .3s; }
+  #chat.active { opacity: 1 !important; }
+
+  
+  /* Header > Navigation > Bottom-right navigation > Icons > Chat, mail message count */
+
+  .message-count { 
+      background: transparent; 
+      color: #33ccb1 !important; 
+      margin-right: -3px; }
+
+  /* Header > Subreddit name */
+
+  .pagename {
+     position: absolute;
+     top: 65px;
+     left: 50%;
+     -webkit-transform: translateX(-50%);
+     transform: translateX(-50%);
+     font-size: 0px; }
+  .pagename a {
+    font-size: 54px;
+    color: #fff;
+    font-family: "Nimbus",sans-serif;
+    letter-spacing: -2px;
+    font-variant: small-caps;
+    font-weight: normal;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25); }
+  .pagename a:before {
+    content: "r/";
+    font-variant: none;
+    text-transform: lowercase;
+    font-size: 70%; letter-spacing: -1px;
+    opacity: 0.8; }
+    .pagename a:hover {
+      text-decoration: none;
+              text-shadow: 2px 2px 20px #0060AC, 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8), 
+          2px 2px 20px rgba(10,161,143,0.8);
+      opacity: 0.8;
+      transition: .3s; }
+
+      
+  /* Header > Navigation > Bottom-right navigation > Icons > All icons > Separators */
+
+  #header-bottom-right .separator { 
+    opacity: 0; 
+    margin: 0 6px; }
+
+    
+    
+    
+/*>>>>>>Posting, aka Post page<<<<<<*/
+.submit-page > .content > form + h1 {
+  width: 510px;
+  height: 35px;
+  padding: 0 0 0 10px;
+  margin: 0;
+  background: #4AA3DF;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 35px;
+  color: #aeaeae;
+  font-family: Lato, sans-serif;
+  position: absolute;
+  top: 215px;
+  left: 10px;
+  display: none; }
+
+.submit-page > .content > form + h1 a {
+  color: #0060AC; }
+
+#newlink-with-image-upload .image-upload-drop-target{
+  background-color:transparent!important;
+  border:none!important; 
+  border-radius: 20px!important; }
+
+.submit-page > .content ul.tabmenu.formtab {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 246px;
+  border-radius: 20px!important;
+  left: 5px; }
+
+.submit-page > .content ul.tabmenu.formtab li:first-of-type { margin-right: 0; }
+
+.submit-page > .content ul.tabmenu.formtab li a {
+  width: 238px;
+  height: 35px;
+  padding: 0 10px;
+  display: inline-block;
+  background: #eeeeee;
+  border: 1px solid #eee;
+  border-radius: 20px!important;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #b0bec5; }
+
+
+.submit-page > .content ul.tabmenu.formtab li.selected a {
+  background: #ffffff;
+  border: 1px solid #fff;
+  color: #0060AC; }
+
+
+/* Main content area */
+
+.submit-page > .content > .content {
+  margin: 0;
+  padding-top: 1px; }
+
+.submit-page > .content .formtabs-content {
+  width: 520px;
+  padding-top: 10px;
+  margin-top: 50px;
+  border-top: none; }
+
+.submit-page .formtabs-content .spacer { margin: 0; }
+
+
+/* Infobar */
+
+.submit-page .formtabs-content .infobar {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #F5F5F5;
+  border: 1px solid #F5F5F5;
+  border-radius: 20px!important;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #777; }
+
+  
+/* Field containers */
+
+.submit-page .formtabs-content .roundfield {
+  background: #fff;
+  border-radius: 20px!important; 
+  color: #0060AC; }
+
+
+.submit-page .formtabs-content .roundfield#title-field { padding-top: 10px; }
+
+
+/* Field titles */
+
+.submit-page .formtabs-content .roundfield .title {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0060AC; }
+
+
+/* Removes "(optional)" from text field */
+
+.submit-page .formtabs-content .roundfield .gray { display: none; }
+
+#evts-colls-promo-js { display: none!important; }
+
+
+/* Field input area */
+
+.submit-page .formtabs-content .roundfield textarea, .submit-page .formtabs-content .roundfield input {
+  padding: 5px;
+  background: none!important;
+  border-color: #0060AC!important;
+  border-radius: 20px!important;
+  font-family: sans-serif;
+  color: #0060AC; }
+ 
+
+.submit-page .formtabs-content .roundfield textarea:active, .submit-page .formtabs-content .roundfield textarea:focus, .submit-page .formtabs-content .roundfield input:active, .submit-page .formtabs-content .roundfield input:focus {
+  outline: none;
+  background: #F8F8F8;
+  border: 1px solid #0060AC!important; 
+  border-radius: 20px!important;
+  color: #0060AC; }
+
+  
+/* Suggested title button */
+
+.submit-page #suggest-title button {
+  padding: 0;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px!important;
+  font-family: sans-serif;
+  color: #2980B9; }
+
+
+/* Removes suggested subs and gold box */
+
+.submit-page .formtabs-content .roundfield#reddit-field, .submit-page .gold-accent { display: none; }
+
+
+/* Bottom rule notice */
+
+.submit-page .content.submit .info-notice {
+  width: 501px;
+  padding-left: 10px;
+  margin: 10px 0;
+  background: #F5F5F5;
+  border: 1px solid #F5F5F5;
+  border-radius: 20px!important;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #777; }
+
+
+.submit-page .content.submit .info-notice:before { display: none; }
+
+.submit-page .content.submit .info-notice a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #2980B9; }
+
+  
+/* Save button */
+
+.submit-page button.flairselect-btn {
+  width: 70px;
+  height: 29px;
+  margin: 0;
+  background: #eee;
+  border: 1px solid #eee;
+  border-radius: 20px!important;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #0060AC; }
+
+  
+/* Submit button */
+
+.submit-page .btn[name="submit"] {
+  width: 521px;
+  height: 35px;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px!important;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0060AC; }
+
+  div#text-desc:after, div#link-desc:after {
+      content: "PLEASE READ THE RULES BEFORE POSTING! THANK YOU!!";
+      color: #0060AC;
+      font-weight: bolder;
+      display: block;
+      font-style: italic; }
+
+  div#image-field span.title:After {
+      content: "Images may take up a few years to upload...";
+      color: #0060AC;
+      font-weight: bolder;
+      display: block;
+      font-style: italic; }
+
+      
+  /* Post page > Comments */
+  
+  .commentarea .usertext-edit { 
+      margin-top: 5px; 
+      margin-right: 10px; 
+      padding: 0;
+      max-width: 707px; 
+      border-radius: 20px; 
+      border: 1px solid #fff; 
+      background: #fff; }  
+  
+  .commentarea .usertext-edit textarea { 
+      border: 1px solid #eee; 
+      border-radius: 20px!important; 
+      background: #eee; 
+      color: #000; 
+      width: -webkit-fill-available;
+      width: -moz-available; 
+      margin: 4px 10px 0px 10px; }
+  .commentarea .usertext-edit textarea:hover { 
+      border: 1px solid #0060AC; 
+      transition: 0.3s ease; }
+  .commentarea .usertext-edit textarea:active, 
+    .commentarea .usertext-edit textarea:focus { 
+        border: 1px solid #0060AC; 
+        background: #eee none; 
+        color: #000; }
+  .comment, .content .details { 
+      border: 1px solid #fff; 
+      border-bottom: 1px solid #ccc;
+      border-radius: 20px!important;
+      background: white; 
+      padding: 10px; 
+      margin: 0; }
+  .child .comment { 
+      border: 1px solid #cccccc;
+      border-radius: 20px!important; }
+  .child .sitetable { margin: 0 }
+  .comment .child, 
+    .comment .showreplies { 
+        border-left: 1px solid #CCCCCC;
+        border-radius: 20px!important; }
+
+  .commentarea .gold-accent.comment-visits-box, .gold-accent, .rounded { 
+      color: #0060AC; 
+      margin: 0px 5px 15px; 
+      padding: 7px 10px 7px 7px; 
+      max-width: 550px; 
+      background-color: #ffffff; 
+      border: solid 1px #fff; 
+      border-radius: 20px!important; }
+    
+    .commentarea .menuarea .toggle a { 
+      color: #0060AC; 
+      padding: 3px 3px 2px 3px; 
+      background: #eee; 
+      border: 1px solid #eee; 
+      border-radius: 20px; 
+      display: block; }
+    .commentarea .menuarea .toggle a:hover { 
+        transition: 0.3s ease-in-out;
+        border: 1px solid #0060AC!important;  }
+      
+  .panestack-title {
+    margin: 10px 310px 10px 10px;
+    padding-bottom: 3px;
+    border-radius: 20px!important;
+    border-bottom: 1px solid #cccccc; }
+    
+  .commentarea .menuarea { 
+      margin: 0px 0 10px 10px; 
+      border-radius: 20px; 
+      padding: 5px; 
+      border: 1px solid #fff; 
+      background: #fff; 
+      width: max-content; }
+      
+  .commentarea .usertext button { margin: 5px 5px 10px 10px; }
+  
+   .new-comment .usertext-body { 
+       border-radius: 20px;
+       border: none; }
+
+  .comment .author {
+    font-weight: bold;
+    padding: 3px 3px 1px 3px;
+    border: 1px solid #eee;
+    border-radius: 20px!important;
+    text-decoration: none!important;
+    background: #eeeeee;
+    -webkit-appearance: button; }
+
+  .comment .author:hover { 
+    border: 1px solid #0060AC;
+    transition: 0.3s ease-in-out;
+    -webkit-appearance: button; }
+
+  .likes.entry .buttons.flat-list .login-required.reply-button .access-required:hover,
+      .unvoted.entry > .buttons.flat-list > .login-required.reply-button > .access-required:hover { 
+          display: block;
+          text-decoration: none !important; 
+          color: #0060AC!important; 
+          border: 1px solid #0060AC!important; 
+          border-radius: 20px!important;
+          padding: 2px 8px 2px 8px!important; 
+          margin: 0px 0px 0px -2px!important; 
+          transition: 0.3s ease-in-out; }
+      
+  .likes.entry .buttons.flat-list .login-required.reply-button .access-required,
+      .unvoted.entry > .buttons.flat-list > .login-required.reply-button > .access-required { 
+          display: block;
+          color: #0060AC!important; 
+          border-radius: 20px!important;
+          background: #eee!important;
+          font-weight: bold; 
+          padding: 2px 8px 2px 8px!important; 
+          border: 1px solid #eee!important; 
+          margin: 0px 0px 0px -2px!important; }
+
+
+  /* Post page > Sidebar > Link info */
+  
+  .linkinfo { 
+      border: 1px solid #fff; 
+      background: white; 
+      border-radius: 20px!important; 
+      padding: 10px;}
+  .linkinfo .shortlink input {
+      border: 1px solid #eee;
+      border-radius: 20px;
+      background: #eee; }
+
+select#comment-visits { 
+    color: #0060AC; 
+    background-color: #ffffff; 
+    border: solid 1px #fff; 
+    border-radius: 20px!important; }
+
+body.comments-page .awarding-icon {
+    max-width: 18px;
+    max-height: 18px;
+    vertical-align: middle; }
+
+body.comments-page .awarding-icon-container {
+    display: inline-block;
+    height: 18px;
+    width: 18px; }
+
+.comment .expand {
+    height: 100%;
+    width: 15px;
+    text-align: center;
+    background-color: transparent;
+    padding: 3px 0;
+    top: 0;
+    left: 0;
+    color:#0060AC;
+    font-size:0;
+    transition:background-color 200ms;}
+
+  a.expand #text {
+    display: none; }
+
+.comment.noncollapsed .expand:after {
+    font-size:18px;
+    content: "-"; }
+
+.comment.collapsed .expand:after {
+    font-size:15px;
+    content: "+"; }
+    
+  .dropdown.lightdrop .selected {
+    cursor: pointer!important;
+    position: relative;
+    background: #eee no-repeat scroll center right;
+    padding: 6px 49px 6px 48px;
+    text-decoration: none;
+    color: #0060AC;
+    border-radius: 20px!important;
+    border: 1px solid #eee; }
+  .dropdown.lightdrop .selected:hover { 
+    border: 1px solid #0060AC!important;
+    transition: 0.3s ease-in-out; }
+  .lightdrop.dropdown-title { display:none!important; }
+
+.drop-choices a.choice {
+    cursor: pointer;
+    padding: 6px 27px 6px 25px;
+    display: -webkit-box;
+    background: #eee;
+    border: 1px solid #eee;
+    border-radius: 20px!important;
+    color: #0060AC; }
+.drop-choices a.choice:hover {
+    border: 1px solid #0060AC!important;
+    border-radius: 20px!important;
+    color: #0060AC;
+    transition: 0.3s ease-in-out; }
+    
+  /* Info bar */
+  
+.infobar {
+    background-color: #ffffff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px!important;
+    font-size: small;
+    margin: 10px 315px 0px 6px;
+    padding: 5px 10px;
+    color: #0060AC;
+    font-weight: bold;}
+    
+  .mellow.infobar.contest-mode {
+      margin-right: unset;
+      max-width: 472px; }
+    
+  .panestack-title .title {
+    margin: 10px 10px;
+    border-radius: 20px;
+    background: #eee;
+    padding: 3px; }
+
+
+  /* Post page > Locked post */
+
+  .reddit-infobar.with-icon {
+    margin-left: 5px;
+    margin-right: 315px;
+    background: #CCCCCC;
+    border: 1px solid #FF4300;
+    border-radius: 20px!important;
+    font-size: 15px; }
+  .reddit-infobar.with-icon:before { background-color: #FF4300; }
+
+  
+  /* End of Post page */
+
+  
+  
+  
+/*>>>>>>Cringy footer<<<<<<*/
+
+  /* Footer > Whole footer */
+
+  .footer {
+      background: white;
+      border: 1px solid #fff;
+      border-radius: 20px!important; width: 281px;
+      float: right; margin: 0 10px 0 0;
+      display: inline-block; }
+  .footer .col { 
+      border-left: 0; 
+      width: 50%; }
+  .footer-parent { padding: 0; }
+
+  
+  /* Footer > Text under footer: "Use of this site constitutes acceptance of our User Agreement and Privacy Policy that we don't even care and blah bla blah." */
+
+  .bottommenu { 
+      float: right; 
+      width: 250px; 
+      margin: 10px 36px 0 0; 
+      padding: 0; }
+
+      
+  /* End of Footer */
+  
+  
+  
+/*>>>>>>Search Page<<<<<<*/
+
+  .search-result-group { 
+      max-width: min-content; 
+      min-width: 600px; 
+      padding-left: 30px; 
+      padding-right: 20px; 
+      background: none; 
+      margin-left: -5px; 
+      margin-right: 10px; 
+      width: -webkit-fill-available; 
+      border: none; 
+      border-radius: 20px; 
+      color: #0060AC; }
+  .search-result { margin: 10px -10px 0px -20px; }
+  
+  .combined-search-page .searchpane { 
+      padding: 10px; 
+      padding-left: 30px; 
+      border: 1px solid #fff; 
+      width: max-content; 
+      border-radius: 20px; 
+      background: #fff; 
+      margin-left: 5px; 
+      color: #0060AC; }
+      
+  div.search-result-listing.listing:nth-of-type(2) .search-result-group {
+      background: #fff;
+      color: #0060AC;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      margin: 18px 0px 0px 5px; }
+
+  .combined-search-page #search input[type=text] {
+      border: 1px solid #eee;
+      background: #eee;
+      border-radius: 20px; }
+  .combined-search-page #search input[type=text]:hover { border: 1px solid #0060AC!important; }
+  .combined-search-page #search input[type=text]:active { border: 1px solid #0060AC!important; }
+
+  .search-result-group-header { 
+      margin-bottom: 20px; 
+      margin-top: 30px; 
+      border: 1px solid #0060AC; 
+      border-radius: 20px; 
+      padding: 5px; 
+      background: #fff; 
+      color: #0060AC; 
+      margin-right: -10px; 
+      margin-left: -20px; }
+
+  .search-result :link, 
+      .search-result :link>mark { color: #0060AC!important; }
+  .search-result:visited { color: #0060AC; }
+  
+   .combined-search-page .search-subscribe-button .add, 
+       .combined-search-page .search-subscribe-button .remove { 
+           color: #ffffff!important; 
+           text-align: center; 
+           transform: scale(1,1); 
+           transition: all 0.15s; 
+           width: 35px; 
+           height: 15px!important; 
+           font-size: 14px!important; 
+           vertical-align: middle; 
+           line-height: 18px!important; 
+           border: 1px solid #ccc; 
+           border-radius: 20px; 
+           text-decoration: none!important; }
+  
+  .search-result.has-thumbnail { 
+      background: #fff; 
+      border: 1px solid #fff;
+      color: #0060AC;
+      border-radius: 20px; 
+      width: -webkit-fill-available;
+      padding: 10px 10px 10px 10px; }
+      
+      
+  /* End of search page */
+
+
+  
+/*>>>>>>Voting icon<<<<<<*/
+
+  /* Vote icons > Upvote and downvote arrows */
+
+  .arrow.up { 
+      background: url(%%spritesheet%%); 
+      width: 15px; 
+      height: 15px; 
+      background-position: -5px -133px; }
+  .arrow.upmod { 
+      background: url(%%spritesheet%%); 
+      width: 15px; 
+      height: 15px; 
+      background-position: -30px -133px;  }
+  .arrow.upmod:focus:after {
+      position:absolute;
+      width:30px;
+      height:30px;
+      margin-top: -7.5px;
+      margin-left: -7.5px;
+      opacity:1;
+      z-index:100;
+      content:" ";
+      background-color:#0060AC;
+      border-radius:20px;
+      animation:upvote .35s ease-out forwards;
+      -webkit-animation:upvote .35s ease-out forwards}
+  .arrow.down { 
+      background: url(%%spritesheet%%); 
+      width: 15px; 
+      height: 15px; 
+      background-position: -55px -133px;  }
+  .arrow.downmod { 
+      background: url(%%spritesheet%%); 
+      width: 15px; 
+      height: 15px; 
+      background-position: -80px -133px;  }
+
+      
+  /* Vote icons > Number between the upvote and downvote arrows */
+
+  .link .score.likes { color: #0060AC; }
+  .link .score { 
+      padding-top: 5px;
+      color: #CCCCCC; }
+  .link .score.dislikes { color: #0254FB; }
+
+  
+  /* End of Vote icons */
+
+  
+
+/*>>>>>>FLAIR PAGE<<<<<<*/
+
+  .tabpane-content { 
+      border: 1px solid #fff; 
+      border-radius: 20px!important;
+      padding: 4px 4px 4px 4px; 
+      background: #fff; 
+      margin-right: 315px; 
+      color: #0060AC; }
+  .linefield .title { color: #0060AC; }
+
+  
+/*>>>>>>Subreddit settings<<<<<<*/
+
+.linefield, .linefield.mobile {
+    width: 514px;
+    padding: 7px 5px;
+    font-size: large;
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 20px!important;
+    color: #0060AC;
+    margin-bottom: 10px; }
+.linefield:nth-of-type(2) { display: none; }
+
+
+
+/*>>>>>>CSS BOI<<<<<<*/ 
+
+  /* Stylesheet > Text area */
+
+  textarea#stylesheet_contents { 
+      max-width: 1015px !important; 
+      min-height: 300px !important; }
+
+      
+  /* ? */
+
+  .reddit-infobar.with-icon { 
+      margin-left: 522px !important; 
+      margin-right: 10px !important; }
+
+      
+  /* End of Stylesheet */
+
+  
+
+/* >>>>>>AUTOMODERATOR GADZOOKS<<<<<< */
+
+  .wiki-page .wikititle strong { color: #0060AC; }
+
+  .wiki-page .pageactions {
+        border-radius: 20px!important;
+        border: 1px solid #0060AC;
+        vertical-align: middle; }
+
+  .wikiaction,
+    .wikiaction-config, 
+       automoderator.wikiaction {
+         border-radius: 20px!important;
+         color: #0060AC; }
+
+  .wiki-page .pageactions .wikiaction-current {
+     color: white;
+     background-color: #0060AC;
+     border-radius: 20px!important; }
+
+  .wiki-page-config-automoderator #editform textarea {
+     background: url(%%banner%%);
+     color: #ffffff;
+     border-radius: 20px!important;
+     border: 1px solid #fff; }
+
+  .wiki-page .wiki-page-content #wiki_revision_reason {
+      background: #eee;
+      color: #0060AC;
+      border-radius: 20px!important;
+      border: 1px solid #eee; }
+
+  .reddit-infobar {
+    background-color: #ffffff;
+    border-color: #fff;
+    border-radius: 20px!important;
+    color: #0060AC!important; }
+  
+  .md-container-small.reddit-infobar .md p { color: #0060AC!important; }
+
+  
+  /* End of automoderator */
+
+
+
+/*>>>>>>WIKIPEDIA-- WAIT, NO.   JUST WIKI.<<<<<<*/
+
+  .wiki-page .wiki-page-content .wiki.md { 
+      background: white; 
+      padding: 15px; }
+
+      
+  /* End of Wiki */
+
+
+  
+/*>>>>>>RES<<<<<<*/
+
+  /* RES -- For the extension... */
+
+  #RESAnnouncementAlert { display: none !important; }
+ .sheets .col textarea { 
+     background: url(%%banner%%); 
+     color: white; 
+     border: 1px solid #CCCCCC; }
+
+     
+  /* End of RES */
+
+  
+
+/*>>>>>>REDDIT MOD TOOL<<<<<<*/
+  
+  /* Enhancer for the reddit mod tools extension */
+
+  #header .tabmenu .tb-queuetools-tab .modtools-on,
+    #header .tabmenu .tb-metrics > [href="javascript:;"] { display: none!important; }
+  .mod-toolbox-rd #tb-notification-alert { display: none!important; }
+.mod-toolbox-rd #tb-bottombar, .mod-toolbox-rd #tb-bottombar-hidden { 
+    background-color: #ffffff!important;
+    color: #0060AC!important;
+    border-top: solid 1px #cccccc!important; }
+body.mod-toolbox-rd #tb-bottombar a:not(.tb-action-button):not(.tb-bracket-button):not(.tb-icons) {
+    color: #0060AC!important;
+    background: #eeeeee!important;
+    border: 1px solid #cccccc!important;
+    border-radius: 20px!important; }
+.mod-toolbox-rd #tb-context-menu,
+   .mod-toolbox-rd #tb-context-menu.show-tb-context,
+      .mod-toolbox-rd #tb-context-menu.show-context-left,
+          .mod-toolbox-rd #tb-new-modmail-tooltip,
+              .mod-toolbox-rd .show-context-left #tb-context-menu-list li,
+                  .mod-toolbox-rd #tb-context-menu-list li,
+                      .mod-toolbox-rd #tb-metrics-expand-list, 
+                          .mod-toolbox-rd #tb-modbar-hide-tooltip {
+                              color: #0060AC!important;
+                              border: 1px solid #cccccc!important;
+                              background: #ffffff!important;
+                              border-radius: 20px!important; }
+    body.mod-toolbox-rd .tb-bracket-button {
+      border-color: #0060AC!important;
+      color: #0060AC!important; }
+
+  /* end of reddit mod tools */
+
+
+  
+/*>>>>>>OMG NIGHT MODE IS THERE, YESSIR FRIENDS<<<<<<*/
+
+  /* Nightmode > Body */
+
+  html[lang="dm"] body { 
+      background: #111111; 
+      color: #0060AC; }
+  html[lang="dm"] .hover-bubble { 
+    background: #222222; 
+    color: #0060AC; 
+    border: 1px solid #0060AC; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25); }
+
+  html[lang="dm"] .usertext .markhelp td { 
+      border: 1px solid #333; 
+      color: #0060AC;
+      background: #222; }
+
+  html[lang="dm"]  .author-tooltip__head { 
+    background-color: #222222; 
+    color: #0060AC; 
+    border-bottom: 1px solid #0060AC; }
+
+  html[lang="dm"] #file { 
+      background: #333; 
+      border: 1px solid #333; }
+      
+  html[lang="dm"] ::-webkit-scrollbar-track { background: #222; }
+      
+      
+   /* Make all buttons fancy in dark mode as well!! - Edited: u/Pinkisjustnumbers */ 
+   
+    html[lang="dm"] .pretty-form input[type="file"], 
+      html[lang="dm"] .pretty-form input[type="password"], 
+        html[lang="dm"] .pretty-form input[type="number"], 
+          html[lang="dm"] .pretty-form select, 
+            html[lang="dm"] .pretty-form button { 
+              border: 1px solid #333!important; 
+              background: #333!important; 
+              color: #0060AC!important; }
+      html[lang="dm"] .pretty-form input[type="file"]:hover, 
+        html[lang="dm"] .pretty-form input[type="password"]:hover, 
+          html[lang="dm"] .pretty-form input[type="number"]:hover, 
+           html[lang="dm"] .pretty-form select:hover, 
+              html[lang="dm"] .pretty-form b:hover, 
+                html[lang="dm"] .pretty-form button:hover {
+                  border: 1px solid #0060AC!important;
+                  transition: 0.3s ease; }
+
+    html[lang="dm"] .pretty-form input[type="text"] { 
+              border: 1px solid #000000; 
+              background: #000000; 
+              color: #0060AC!important; }
+
+  html[lang="dm"] .linefield textarea, 
+    html[lang="dm"] .linefield input[type=text], 
+      html[lang="dm"] .linefield input[type=password] {
+        font-size: 100%;
+        width: 492px;
+        padding: 3px;
+        margin: 0;
+        border: 1px solid #000000;
+        background: #000000;
+        color: #0060AC; }
+
+  html[lang="dm"] .c-btn-primary { 
+      background-color: #333; 
+      border: 1px solid #0060AC; 
+      color: #0060AC; 
+      border-radius: 20px; }
+
+  html[lang="dm"] #img-name { 
+    border: 1px solid #000000; 
+    background: #000000; 
+    color: #0060AC; }
+
+  html[lang="dm"] .pretty-form { color: #0060AC; }
+
+  html[lang="dm"] .nextprev a, 
+    html[lang="dm"] .next-suggestions a { 
+      background: #333; 
+      border: 1px solid #333;
+      color: #0060AC; }
+
+  html[lang="dm"] .usertext .help-toggle, 
+      html[lang="dm"] .usertext a.reddiquette { 
+          border: 1px solid #333; 
+          background: #333; }
+          
+
+   /* for CSS page */
+
+  html[lang="dm"] ul.image-preview-list .description pre { 
+    color: #999999; 
+    background-color: transparent; }
+
+
+  /* Nightmode > Posts list */
+
+  html[lang="dm"] .link { 
+      background: #222222; 
+      border: 1px solid #222222; }
+  html[lang="dm"] .link:hover {
+      Background: #222222;
+      border: 1px solid #333;
+      transition: 0.4s ease-in-out; }
+  html[lang="dm"] .thing.stickied.link { background: #292929; }
+  html[lang="dm"] .link .usertext-body .md { 
+      background: #111111; 
+      color: white; 
+      border: 1px solid #111111;}
+  html[lang="dm"] .spoiler-stamp { color: #555555; }
+  html[lang="dm"] .flaircolorlight { 
+      color: black; 
+      opacity: .5; }
+  html[lang="dm"] .flaircolordark { 
+      color: white; 
+      opacity: .5; }
+      
+  html[lang="dm"] .likes.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink, 
+      html[lang="dm"] .unvoted.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink { 
+          background: #333333!important;
+          border: 1px solid #333333!important; }
+  html[lang="dm"] .likes.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink:hover, 
+      html[lang="dm"] .unvoted.entry > .top-matter > .buttons.flat-list > .first > .may-blank.comments.bylink:hover { 
+          background: #0060AC;
+          border: 1px solid #0060AC!important; }
+  html[lang="dm"] .crosspost-preview { background: #111; }
+
+      
+  /* Nightmode > reporting buttons */
+  
+  html[lang="dm"] .entry .buttons li.reported-stamp,
+  html[lang="dm"] .pretty-button.negative,
+    html[lang="dm"] .pretty-button.neutral,
+      html[lang="dm"] .pretty-button.positive { 
+          border: 1px solid #048286 !important; 
+          border-radius: 20px!important; }
+  html[lang="dm"] .entry .buttons li.reported-stamp { color: white; }
+  html[lang="dm"] .entry .buttons li.reported-stamp { background: #ff0000 }
+  html[lang="dm"] .pretty-button.negative,
+    html[lang="dm"] .pretty-button.neutral,
+      html[lang="dm"] .pretty-button.positive { background: #000; border: 1px solid #22ff00; }
+
+      
+  /* Nightmode > sharing button */      
+      
+  html[lang="dm"] .post-sharing,
+       html[lang="dm"] .post-sharing .post-sharing-main .c-form-group .post-sharing-label,
+          html[lang="dm"] .c-form-control {
+            background: #333!important;
+            border: 1px solid #333!important;
+            color: #0060AC; }
+            
+            
+  /* awarding Icons */
+  
+  html[lang="dm"] .awardings-bar { background: #333333; }
+    
+      
+  /* Nightmode > Sidebar */
+
+  html[lang="dm"] .side #search input[type=text] { 
+      border: 1px solid #222222; 
+      background: #222222; 
+      color: #AAAAAA;}
+  html[lang="dm"] #searchexpando { 
+      border: 1px solid #222222; 
+      border-radius: 20px!important; 
+      background: #222222; }
+  html[lang="dm"] .titlebox { 
+      background: #222222; 
+      border: 1px solid #222222; }
+  html[lang="dm"] .morelink { border: 1px solid #222; }
+  html[lang="dm"] .morelink a { background: #222; }
+  html[lang="dm"] .morelink:after { 
+      background-color: #222; 
+      color: #0060AC; 
+      border: 1px solid #0060AC; }
+  html[lang="dm"] .linkinfo { 
+      border: 1px solid #222222; 
+      background: #222222; 
+      border-radius: 20px!important; 
+      padding: 5px 8px; }
+    html[lang="dm"] .linkinfo .shortlink input { 
+        background: #333333; 
+        color: white; 
+        border-radius: 20px;
+        border: 1px solid #333333; 
+        font-family: monospace; 
+        font-size: 140%; 
+        padding: 3px 2px; 
+        width: 175px; }
+
+  html[lang="dm"] .titlebox .subscribe-button .active { background: #333333; }
+  html[lang="dm"] .titlebox form.toggle, html[lang="dm"] .leavemoderator { background: #222222; }
+  html[lang="dm"] .side .md { 
+      background: #333333; 
+      color: white; 
+      border: 1px solid #333333;}
+  html[lang="dm"] .sidecontentbox .content { 
+      background: #222222; 
+      border: 1px solid #222222; }
+  html[lang="dm"] .thumbnail.self,
+    html[lang="dm"] .thumbnail.default,
+      html[lang="dm"] .thumbnail.nsfw,
+        html[lang="dm"] .thumbnail.spoiler { background: url(%%nightmode%%) }
+  html[lang="dm"] .thumbnail.self { 
+      background-position: 0px -1267px; 
+      background-repeat: no-repeat; }
+  html[lang="dm"] .thumbnail.default { 
+      background-position: 0px -1099px; 
+      background-repeat: no-repeat; }
+  html[lang="dm"] .thumbnail.nsfw { 
+      background-position: 0px -1155px; 
+      background-repeat: no-repeat; }
+  html[lang="dm"] .thumbnail.spoiler { 
+      background-position: 0px -1211px; 
+      background-repeat: no-repeat; }
+  html[lang="dm"] a.thumbnail.invisible-when-pinned.may-blank.loggedin { background-color: #30302E; }
+  
+  html[lang="dm"] .side .subscribers { 
+    color: #0060AC;
+    border: 1px solid #333;
+    background: #333; }
+  html[lang="dm"] .side .users-online {
+    color: #0060AC;
+    border: 1px solid #333;
+    background: #333; }
+  
+  html[lang="dm"] .titlebox .tagline { 
+      border: 1px solid #333;
+      background:#333; }
+  
+      /* Hover animation for the rules */
+      
+  html[lang="dm"] .side .usertext h3 { 
+      border-bottom: 1px solid #555;
+      background: none; }
+  html[lang="dm"] .side .usertext h3 + ul {
+       border:none;
+       background: #222; }
+  html[lang="dm"] .side .usertext h3 + ul li p { 
+      margin: 0; 
+      margin-left: 16px; 
+      position: relative; 
+      color: #0060AC; }
+  html[lang="dm"] .side .usertext h3 + ul li p:before { 
+      content: "-"; 
+      position: absolute; 
+      left: -9px;
+      color: #aaa; 
+      top: 0; }
+
+  html[lang="dm"] .side h2:nth-of-type(1) a { 
+      background-image: url(%%discord%%);
+      background-size: cover;
+      background-position: center; }
+  html[lang="dm"] .side h2:nth-of-type(1) a:hover { 
+      background-image: url(%%discord%%);
+      background-size: cover;
+      background-position: center; }
+
+  html[lang="dm"] .side h2 a { 
+    background: #004d45; 
+    color: #fff; }
+  html[lang="dm"] .side h2 a:hover { 
+      background:#002621; 
+      color: #ffffff; }
+  html[lang="dm"] .side h2 a:after {
+      background-color: #222222;
+      color: #0060AC;
+      border: 1px solid #0060AC; }
+
+      
+      /* RULESSSS */
+
+  html[lang="dm"] .side .usertext h3 { 
+      background: none; 
+      color: #ffffff; }
+  html[lang="dm"] .side .usertext h3:hover {background: #0060AC; }
+  html[lang="dm"] .side .usertext h3 + ul li p { 
+      margin: 0; 
+      margin-left: 16px; 
+      position: relative; 
+      color: #0060AC; }
+  html[lang="dm"] .side .usertext h3 + ul li p:before { 
+      content: "-"; 
+      position: absolute; 
+      left: -9px; 
+      color: #aaa; 
+      top: 0; }
+
+      
+  /* collapse/expand moderator toolbox */
+
+  html[lang="dm"]  .sidecontentbox .collapse-button { 
+      background: #222222; 
+      border: 1px solid #222222; } 
+
+      
+  /* Message all the mods box */
+
+  html[lang="dm"] .side .helplink { 
+      background: #222; 
+      border: 1px solid #222; 
+      color: #0060AC; }
+  html[lang="dm"] .side .helplink:hover { 
+      background-color: #222; 
+      color: #0060AC; 
+      border: 1px solid #0060AC; }
+
+      
+   /* MODERATION */
+
+  html[lang="dm"] .icon-menu li {
+      border: none; }
+  html[lang="dm"] .icon-menu li:hover { 
+      border: 1px solid #333333; 
+      background: #333333; }
+
+  html[lang="dm"] ul.report-reasons { 
+      background-color: #333333; 
+      border: 1px #0060AC; }
+  html[lang="dm"] .thing.spam { 
+      background-color: #ff0004; 
+      border-color: #ff0004!important; }
+
+      
+    /* Edit subreddit page, makes it unifrom! - Edited: u/Pinkisjustnumbers */
+
+    html[lang="dm"] .linefield, 
+      html[lang="dm"] .linefield.mobile {
+        width: 514px;
+        padding: 7px 5px;
+        font-size: large;
+        background-color: #222222;
+        border: 1px solid #222222;
+        color: #0060AC;
+        margin-bottom: 10px; }
+  
+  
+  /* Nightmode > Post page */
+
+  html[lang="dm"] .submit-page > .content > form + h1 { 
+      background: #4AA3DF; 
+      color: #aeaeae; }
+  html[lang="dm"] .submit-page > .content > form + h1 a { color: #FFF; }
+  html[lang="dm"] .submit-page > .content ul.tabmenu.formtab li a { 
+      background: #161616; 
+      border: 1px solid #161616; 
+      color: #333333; }
+  html[lang="dm"] .submit-page > .content ul.tabmenu.formtab li.selected a { 
+      background: #222222; 
+      color: #0060AC; }
+
+  html[lang="dm"] #newlink-with-image-upload .image-upload-drop-target{
+      background-color: transparent!important; 
+      border: none!important; 
+      border-radius: 20px!important; }
+
+      
+/* Infobar */
+
+  html[lang="dm"] .submit-page .formtabs-content .infobar { 
+      background-color: #1b1b1b; 
+      border: 1px solid #1b1b1b; 
+      color: #777; }
+
+      
+/* Field containers */
+
+  html[lang="dm"] .submit-page .formtabs-content .roundfield {  background: #222222; }
+
+  
+/* Field titles */
+
+  html[lang="dm"] .submit-page .formtabs-content .roundfield .title { color: #0060AC; }
+
+  
+/* Field input area */
+
+  html[lang="dm"] .submit-page .formtabs-content .roundfield textarea, .submit-page .formtabs-content .roundfield input { 
+      background: transparent; 
+      color: #0060AC; }
+  html[lang="dm"] .submit-page .formtabs-content .roundfield textarea:active, 
+    html[lang="dm"] .submit-page .formtabs-content .roundfield textarea:focus, 
+      html[lang="dm"] .submit-page .formtabs-content .roundfield input:active, 
+        html[lang="dm"] .submit-page .formtabs-content .roundfield input:focus { 
+            background: transparent; 
+            border: 1px solid #0060AC; 
+            color: #0060AC; }
+
+
+/* Suggested title button */
+
+  html[lang="dm"] .submit-page #suggest-title button { 
+      background: transparent; 
+      border: 1px solid #333333; 
+      color: #2980B9; }
+  html[lang="dm"] .submit-page .content.submit .info-notice { 
+      background: #1b1b1b; 
+      border: 1px solid #1b1b1b; 
+      color: #777; }
+  html[lang="dm"] .submit-page .content.submit .info-notice a { 
+      background-color: #1b1b1b; 
+      border: 1px solid #1b1b1b; 
+      color: #777; }
+  html[lang="dm"] .flairselector h2 { 
+      background: #333333; 
+      border: 1px solid #333333; 
+      color: #0060AC; }
+  html[lang="dm"] .flairselector.drop-choices.active { border: 1px solid #222222; }
+  html[lang="dm"] .flairselector { 
+      background: #222222; 
+      box-shadow: none; }
+  
+  html[lang="dm"] .drop-choices { 
+      border: none; 
+      background-color: none; 
+      color: #0060AC; }
+
+  html[lang="dm"] #newlink-with-image-upload #image-name { 
+      background: #333333; 
+      border: 1px solid #333333;
+      color: #0060AC; }
+      
+      
+/* Save button */
+
+  html[lang="dm"] .submit-page button.flairselect-btn { 
+      background: #333; 
+      border: 1px solid #333333; 
+      color: #0060AC; }
+
+
+/* Submit button */
+
+  html[lang="dm"] .submit-page .btn[name="submit"] { 
+      background: #222; 
+      border: 1px solid #222; 
+      color: #0060AC; }
+      
+      
+/* comments section */
+
+  html[lang="dm"] .commentarea .comment { 
+      background: #222222; 
+      border: 1px solid #222; 
+      color: white; }
+  html[lang="dm"] .child .comment { 
+      background: #222222; 
+      border: 1px solid #333333; 
+      color: white !important; }
+  html[lang="dm"] .new-comment .usertext-body { 
+      background-color: #333333; 
+      border: 1px solid #333333; 
+      margin: -1px 0; 
+      padding: 0 4px; }
+  html[lang="dm"] .comment p { 
+      background: none; 
+      color: white !important; }
+  html[lang="dm"] span.score.unvoted,
+    html[lang="dm"] span.score.unvoted .likes .score.likes,
+      html[lang="dm"] time.live-timestamp { color: #00957f; }
+
+  html[lang="dm"] .comment .child, 
+    html[lang="dm"] .comment .showreplies { 
+       border-left: 1px solid #555555; }
+
+  html[lang="dm"] .comment .author {
+    font-weight: bold;
+    padding: 3px 3px 1px 3px;
+    border: 1px solid #111111;
+    text-decoration: none!important;
+    background: #111111;
+    -webkit-appearance: button; }
+  html[lang="dm"] .comment .author:hover { 
+    border: 1px solid #005345;
+    transition: 0.3s ease-in-out;
+    -webkit-appearance: button; }
+    
+  html[lang="dm"] .panestack-title { border-bottom: 1px solid #333333; }
+  
+    html[lang="dm"] .panestack-title .title {
+    margin: 10px 10px;
+    border-radius: 20px;
+    background: #222;
+    padding: 3px; }
+
+
+    /* Make the edited comments page dark */
+
+    html[lang="dm"] .comment, 
+      html[lang="dm"] .content .details {
+        border: 1px solid #0055ff;
+        border-bottom: 1px solid #333!important;
+        background: #222222; }
+
+  html[lang="dm"] .likes.entry > .buttons.flat-list > .login-required.reply-button > .access-required:hover,
+    html[lang="dm"] .unvoted.entry > .buttons.flat-list > .login-required.reply-button > .access-required:hover { 
+            color: #0060AC; 
+            border: 1px solid #0060AC!important; }
+      
+  html[lang="dm"] .likes.entry > .buttons.flat-list > .login-required.reply-button > .access-required,
+    html[lang="dm"] .unvoted.entry > .buttons.flat-list > .login-required.reply-button > .access-required { 
+            color: #0060AC;
+            background: #333333!important;
+            border: 1px solid #333333!important; }
+            
+  html[lang="dm"] .commentarea .menuarea .toggle a { 
+        background: #333333; 
+        border: 1px solid #333; }
+  html[lang="dm"] .commentarea .menuarea { 
+      border: 1px solid #222; 
+      background: #222; }
+
+
+    /* Make the automoderator page dark mode as well */
+
+    html[lang="dm"] .wiki-page .wikititle strong { color: #0060AC; }
+
+    html[lang="dm"] .wiki-page .pageactions {
+        border-radius: 20px!important;
+        border: 1px solid #0060AC;
+        vertical-align: middle; }
+
+      html[lang="dm"] .wikiaction,
+        html[lang="dm"] .wikiaction-config, 
+          html[lang="dm"] automoderator.wikiaction {
+            border-radius: 20px!important;
+            color: #0060AC; }
+
+      html[lang="dm"] .wiki-page .pageactions .wikiaction-current {
+        color: white;
+        background-color: #0060AC;
+        border-radius: 20px!important; }
+
+    html[lang="dm"] .wiki-page-config-automoderator #editform textarea {
+      background: url(%%banner%%);
+      color: #ffffff;
+      border: 1px solid #0060AC; }
+
+    html[lang="dm"] .wiki-page .wiki-page-content #wiki_revision_reason {
+      background: #000000;
+      color: #0060AC;
+      border: 1px solid #000; }
+
+    html[lang="dm"] .reddit-infobar {
+          background-color: #000000;
+          border-color: #0060AC;
+          color: #0060AC; }
+
+
+    /* Make textbox darker... */
+
+  html[lang="dm"] .flairlist .flaircell input[type="text"] {
+    color: #0060AC;
+    background: #000000;
+    border: 1px solid #000; }
+    
+
+        /* Text input boxes in comment section */
+        
+  html[lang="dm"] .usertext-edit { 
+      border: 1px solid #222; 
+      background: #222; }
+  html[lang="dm"] .commentarea .usertext-edit textarea { 
+      border: 1px solid #000; 
+      background: #000; 
+      color: #fff; }
+  html[lang="dm"] .commentarea .usertext-edit textarea:hover { 
+      border: 1px solid #0060AC; 
+      background: #000 none; 
+      transition: 0.3s ease-in-out;
+      color: #fff; }
+  html[lang="dm"] .commentarea .usertext-edit textarea:active,
+  html[lang="dm"] .commentarea .usertext-edit textarea:focus { 
+      border: 1px solid #0060AC; 
+      background: #000; 
+      color: #fff; }
+  html[lang="dm"] button, 
+    html[lang="dm"] html input[type="button"], 
+      html[lang="dm"] input[type="reset"], 
+        html[lang="dm"] input[type="submit"] {
+          -webkit-appearance: button;
+          cursor: pointer;
+          background: #333;
+          border: 1px solid #333333;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 20px;
+          color: #0060AC; }
+ html[lang="dm"] .commentarea .gold-accent.comment-visits-box, .gold-accent { 
+     color: #0060AC; 
+     margin: 0px 5px 15px; 
+     padding: 7px 10px 7px 7px; 
+     max-width: 550px; 
+     background-color: #222; 
+     border: solid 1px #222; 
+     border-radius: 20px!important; }
+     
+  html[lang="dm"] .dropdown.lightdrop .selected { 
+    background: #333 no-repeat scroll center right; 
+    color: #0060AC; 
+    border: 1px solid #333333; }
+    
+  Html[lang="nm"] .drop-choices a.choice {
+    cursor: pointer;
+    padding: 6px 27px 6px 25px;
+    display: -webkit-box;
+    background: #333;
+    border: 1px solid #333333;
+    color: #0060AC;}
+     
+ html[lang="dm"] select#comment-visits { 
+     color: #0060AC; 
+     background-color: #222222; 
+     border: solid 1px #222; 
+     border-radius: 20px!important; }
+  html[lang="dm"] .infobar { 
+      background-color: #222222; 
+      border-color: #0060AC; 
+      color: #0060AC; }
+
+
+  /* Nightmode > Footer */
+
+  html[lang="dm"] .footer { 
+      background: #222222; 
+      border: 1px solid #222; }
+      
+      
+  /* Nightmode > search page */
+  
+  html[lang="dm"] .search-result-group { color: #0060AC; }
+      
+  html[lang="dm"] div.search-result-listing.listing:nth-of-type(2) .search-result-group {
+      background: #222;
+      color: #0060AC;
+      border: 1px solid #222; }
+      
+  html[lang="dm"] .combined-search-page .searchpane { 
+      border: 1px solid #222; 
+      background: #222; 
+      color: #0060AC; }
+  
+  html[lang="dm"] .combined-search-page #search input[type=text] {
+      border: 1px solid #333;
+      background: #333
+      color: #0060AC
+      border-radius: 20px; }
+      
+  html[lang="dm"] .search-result-group-header { 
+      border: 1px solid #0060AC; 
+      background: #222; 
+      color: #0060AC; }
+      
+  html[lang="dm"] .search-result.has-thumbnail { 
+      background: #222; 
+      border: 1px solid #222; }
+ 
+  html[lang="dm"] .md textarea, 
+    html[lang="dm"] .md .-text, 
+      html[lang="dm"] .md p, 
+        html[lang="dm"] .md pre  code, 
+          html[lang="dm"] .md th, 
+            html[lang="dm"] .md td, 
+              html[lang="dm"] .md li { color: white; }
+
+  /* Flair page */
+
+  html[lang="dm"] .tabpane-content { 
+      border: 1px solid #333; 
+      padding: 4px 4px 4px 4px; 
+      background: #222; 
+      margin-right: 315px; 
+      color: #0060AC; }
+
+
+  /* Reddit mods tools */
+
+  html[lang="dm"] .mod-toolbox-rd #tb-bottombar, .mod-toolbox-rd #tb-bottombar-hidden { 
+    background-color: #222222!important;
+    color: #0060AC!important;
+    border-top: solid 1px #333333!important; }
+  html[lang="dm"] body.mod-toolbox-rd #tb-bottombar a:not(.tb-action-button):not(.tb-bracket-button):not(.tb-icons) {
+    color: #0060AC!important;
+    background: #222222!important;
+    border: 1px solid #333333!important;
+    border-radius: 20px!important; }
+  html[lang="dm"] .mod-toolbox-rd #tb-context-menu,
+   html[lang="dm"] .mod-toolbox-rd #tb-context-menu.show-tb-context,
+      html[lang="dm"] .mod-toolbox-rd #tb-context-menu.show-context-left,
+          html[lang="dm"] .mod-toolbox-rd #tb-new-modmail-tooltip,
+              html[lang="dm"] .mod-toolbox-rd .show-context-left #tb-context-menu-list li,
+                  html[lang="dm"] .mod-toolbox-rd #tb-context-menu-list li,
+                      html[lang="dm"] .mod-toolbox-rd #tb-metrics-expand-list, 
+                          html[lang="dm"] .mod-toolbox-rd #tb-modbar-hide-tooltip {
+                              color: #0060AC!important;
+                              border: 1px solid #222!important;
+                              background: #222222!important;
+                              border-radius: 20px!important; }
+
+
+  /* Nightmode > Button */
+
+    /* Addon: Start Nightmode */
+
+  .titlebox .usertext-body .md h5 {
+    display: block;
+    position: absolute;
+    z-index:5;
+    /* font-family: NimbusSans-Regular, "Segoe UI", Arial, Verdana; */
+    top: 201px!important;
+    right: 11px;
+    font-size: 14px;
+    line-height: 25px;
+    height: 26px;
+    z-index: 400; 
+    padding: 1px 10px 1px 0px;
+    color: #757575;
+    transition: 0.25s ease-in-out;
+    text-decoration:none;
+    border-radius: 20px!important;
+    font-weight: 400;
+    background: #FFFFFF; }
+
+  .titlebox .usertext-body .md h5 { top: 35px; }
+  .titlebox .usertext-body .md h5 a { 
+      border-radius: 20px!important;
+      color: #757575; }
+  .titlebox .usertext-body .md h5:hover{
+      background-color: #0060AC; 
+      transition: 0.25s ease-in-out; }
+  .titlebox .usertext-body .md h5 a:before {
+    content: "Toggle";
+    white-space: pre;
+    display: inline-block;
+    color: #757575;
+    font-weight: bold;
+    padding: 0 9px 0 9px;
+    border-radius: 20px!important;
+    height:26px;
+    background: transparent; }
+
+  html[lang^=dm] .titlebox .usertext-body .md h5 { display:none; }
+  html[lang^=dm].titlebox .usertext-body .md h5{ display:none; }
+  html[lang^=dm].titlebox .usertext-body .md h5 a{ display:none; }
+  html[lang^=dm].titlebox .usertext-body .md h5:hover{ display:none; }
+  html[lang^=dm] .titlebox .usertext-body .md h5 a:before { display:none; }
+
+  html[lang^=dm] .titlebox .usertext-body .md h6 {
+    display: block;
+    position: absolute;
+    z-index:5;
+    /* font-family: NimbusSans-Regular, "Segoe UI", Arial, Verdana; */
+    top: 201px!important;
+    right: 11px;
+    font-size: 14px;
+    line-height: 25px;
+    height: 26px;
+    z-index: 400; 
+    padding: 1px 10px 1px 0px;
+    color: white;
+    border-radius: 20px!important;
+    transition: 0.25s ease-in-out;
+    text-decoration:none;
+    font-weight: 400;
+    background: #333333; }
+
+  html[lang^=dm] .titlebox .usertext-body .md h6 { top: 75px; }
+  html[lang^=dm] .titlebox .usertext-body .md h6 a {
+      border-radius: 20px!important;
+      color: white; }
+  html[lang^=dm] .titlebox .usertext-body .md h6:hover{ 
+      background-color: #0060AC;
+      transition: 0.25s ease-in-out; }
+  html[lang^=dm] .titlebox .usertext-body .md h6 a:before {
+    content: "Toggle";
+    white-space: pre;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    padding: 0 9px 0 9px;
+    border-radius: 20px!important;
+    height:26px;
+    background: transparent; }
+  .titlebox .usertext-body .md h6 a:hover:before { content: "Toggle"; }
+  .titlebox .usertext-body .md h6 {display:none}
+
+  
+  /* End of Night mode */
+
+  
+  
+/*>>>>>>New annoying mail toast!!!<<<<<<*/
+
+#mail.havemail:before {
+    position: fixed;
+    padding: 16px 16px;
+    bottom: 24px;
+    z-index: 100;
+    background: #0060AC;
+    border-radius: 20px!important;
+    border: 1px solid #b0bec5;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.24);
+    color: #aaa;
+    width: 300px;
+    height: 19px;
+    left: 10px;
+    content: "Gadzooks! You have new messages!";
+    text-indent: 0;
+    font: bold 16px Lato,Arial,sans-serif; color: #ffffff;
+    line-height: 1.5;
+    -webkit-transform: translateY(112px);
+    transform: translateY(112px);
+    transition: background .25s ease,box-shadow .25s ease; }
+
+#mail.havemail:hover:before {
+    background-color: #07796a;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.48); }
+
+#mail.havemail:active:before {
+    background-color: #045a4e;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.76); }
+
+    
+/* New Mail Toast Animation */
+
+#mail.havemail:before {
+    animation-name: toast;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    -webkit-animation-name: toast;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease; }
+
+#mail.havemail:hover:before {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused; }
+
+@-webkit-keyframes toast {
+    0% { transform: translateY(76px);
+         -webkit-transform: translateY(76px);
+         opacity: 0; }
+    20% { transform: translateY(76px);
+          -webkit-transform: translateY(76px);
+          opacity: 0; }
+    25% { transform: translateY(-8px);
+          -webkit-transform: translateY(-8px);
+          opacity: 1; }
+    27% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    92% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    97% { transform: translateY(16px);
+          -webkit-transform: translateY(16px);
+          opacity: 1; }
+    100% { transform: translateY(76px);
+           -webkit-transform: translateY(76px);
+           opacity: 0; }  }
+
+@-o-keyframes toast {
+    0% { transform: translateY(76px);
+         -webkit-transform: translateY(76px);
+         opacity: 0; }
+    20% { transform: translateY(76px);
+          -webkit-transform: translateY(76px);
+          opacity: 0; }
+    25% { transform: translateY(-8px);
+          -webkit-transform: translateY(-8px);
+          opacity: 1; }
+    27% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    92% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    97% { transform: translateY(16px);
+          -webkit-transform: translateY(16px);
+          opacity: 1; }
+    100% { transform: translateY(76px);
+          -webkit-transform: translateY(76px);
+          opacity: 0; } }
+
+@-moz-keyframes toast {
+    0% { transform: translateY(76px);
+         -webkit-transform: translateY(76px);
+         opacity: 0; }
+    20% { transform: translateY(76px);
+          -webkit-transform: translateY(76px);
+          opacity: 0; }
+    25% { transform: translateY(-8px);
+          -webkit-transform: translateY(-8px);
+          opacity: 1; }
+    27% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    92% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    97% { transform: translateY(16px);
+          -webkit-transform: translateY(16px);
+          opacity: 1; }
+    100% { transform: translateY(76px);
+          -webkit-transform: translateY(76px);
+          opacity: 0; } }
+
+@keyframes toast {
+    0% { transform: translateY(76px);
+         -webkit-transform: translateY(76px);
+         opacity: 0; }
+    20% { transform: translateY(76px);
+          -webkit-transform: translateY(76px);
+          opacity: 0; }
+    25% { transform: translateY(-8px);
+          -webkit-transform: translateY(-8px);
+          opacity: 1; }
+    27% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    92% { transform: translateY(00px);
+          -webkit-transform: translateY(00px);
+          opacity: 1; }
+    97% { transform: translateY(16px);
+          -webkit-transform: translateY(16px);
+          opacity: 1; }
+    100% { transform: translateY(76px);
+          -webkit-transform: translateY(76px);
+          opacity: 0; } }
+
+@-webkit-keyframes upvote {
+    0% { transform: scale(0,0);
+         -webkit-transform: scale(0,0);
+         opacity: 1; }
+    45% { opacity: 1; }
+    98% { opacity: 0; }
+    100% { transform: scale(1.5,1.5);
+           -webkit-transform: scale(1.5,1.5);
+           opacity: 0; } }
+
+@-moz-keyframes upvote {
+    0% { transform: scale(0,0);
+         -webkit-transform: scale(0,0);
+         opacity: 1; }
+    45% { opacity: 1; }
+    98% { opacity: 0; }
+    100% { transform: scale(1.5,1.5);
+           -webkit-transform: scale(1.5,1.5);
+           opacity: 0; } }
+
+@-o-keyframes upvote {
+    0% { transform: scale(0,0);
+         -webkit-transform: scale(0,0);
+         opacity: 1; }
+    45% { opacity: 1; }
+    98% { opacity: 0; }
+    100% { transform: scale(1.5,1.5);
+           -webkit-transform: scale(1.5,1.5);
+           opacity: 0; } }
+
+@keyframes upvote {
+    0% { transform: scale(0,0);
+         -webkit-transform: scale(0,0);
+         opacity: 1; }
+    45% { opacity: 1; }
+    98% { opacity: 0; }
+    100% { transform: scale(1.5,1.5);
+           -webkit-transform: scale(1.5,1.5);
+           opacity: 0; } }
+           
+   @keyframes fadein4 {
+0% {
+    opacity: 0;
+    transform: translateY(-48px);
+    -webkit-transform: translateY(-48px); }
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);}
+0% {
+    opacity: 0;
+    transform: translateY(-48px);
+    -webkit-transform: translateY(-48px); }
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); }
+0% {
+    opacity: 0;
+    transform: translateY(-48px);
+    -webkit-transform: translateY(-48px); }
+100% {
+    opacity: 1;
+    transform: translateY(-0px);
+    -webkit-transform: translateY(-0px); } }
+    
+    
+
+/*>>>>>>CUSTOM CSS HERE<<<<<<*/
+
+  .The_Quantum_Alpha {
+    content: "PLATINUMv.2.0"; }
+
+
+  /* Show discord link from auto mod */
+
+  p:nth-of-type(1) > [href="DISCORD-URL"] {
+    padding: 6px 6px 2px 6px;
+    border: 1px solid #eee;
+    background: #eee;
+    border-radius: 20px!important;
+    display: -webkit-inline-box; }
+    
+  p:nth-of-type(1) > [href="DISCORD-URL"]:hover { 
+      border: 1px solid #0060AC; 
+      color: #fff !important; 
+      transition: 0.3s ease-in-out; 
+      background: #0060AC!important; 
+      border-radius: 20px!important; }
+
+  html[lang="dm"] p:nth-of-type(1) > [href="DISCORD-URL"] {
+    padding: 6px 6px 2px 6px;
+    border: 1px solid #333333;
+    background: #333;
+    display: -webkit-inline-box; }
+
+  p:nth-of-type(2) > em {
+    font-size:10px;
+    color: #555555; }
+    
+    
+
+/* Reddit Emotes */
+
+.md [href$="quesito"]:before {
+    background: url(%%customredditemote%%) -0px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="grin"]:before {
+    background: url(%%customredditemote%%) -32px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="platinum"]:before {
+    background: url(%%customredditemote%%) -64px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="adminabuse"]:before {
+    background: url(%%customredditemote%%) -96px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="blobnombunny"]:before {
+    background: url(%%customredditemote%%) -128px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="blobnomheart"]:before {
+    background: url(%%customredditemote%%) -160px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="sad"]:before {
+    background: url(%%customredditemote%%) -192px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="partysad"]:before {
+    background: url(%%customredditemote%%) -224px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="thonk"]:before {
+    background: url(%%customredditemote%%) -256px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="strawberry"]:before {
+    background: url(%%customredditemote%%) -288px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="mememan"]:before {
+    background: url(%%customredditemote%%) -320px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+
+.md [href$="rickroll"]:before {
+    background: url(%%customredditemote%%) -352px -0px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    content: "";
+    cursor: text; }
+ 
+ 
+/* Reddit Emotes END */
+
+
+
+/*>>>>>>Badges<<<<<<*/
+
+/* user attributes */
+
+.userattrs { font-size: 0; }
+.userattrs a {
+    cursor: help;
+    background: #0055df;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    display: inline-block;
+    color: #fff !important;
+    vertical-align: baseline;
+    line-height: 18px;
+    border-radius: 20px!important; }
+.userattrs a:hover { text-decoration: none; }
+.userattrs a.moderator { background: #228822; }
+
+
+/* Flairs */
+
+  /*CREATOR*/
+ 
+.flair-creator:hover {
+  max-width: 250px;
+  width: auto;
+  background-color: #738bd7;
+  color: #fff;
+  padding: 1px 2px 0px 6px;
+  background-repeat: no-repeat;
+  transition: all .6s ease-in; }
+
+
+.flair-creator {
+  background: url(%%creator%%);
+  background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 10px;
+    max-width: 10px;
+    width: auto;
+    margin: -2px 0px;
+    padding: 1px 3px 0px 0px;
+    text-indent: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(255,255,255,0);
+    border-radius: 5px!important;
+    border: 0;
+    font-size: 10px;
+    text-transform: none;
+    line-height: 10px;
+    font-family: arial;
+    transition: all .6s ease-out; }
+
+
+/* MOD FLAIR */
+
+.flair-moderator:hover {
+  max-width: 250px;
+  width: auto;
+  background-color: #43b581;
+  color: #fff;
+  padding: 1px 2px 0px 6px;
+  background-repeat: no-repeat;
+  transition: all .6s ease-in; }
+
+.flair-moderator {
+  background: url(%%moderator%%);
+  background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 10px;
+    max-width: 10px;
+    width: auto;
+    margin: -2px 0px;
+    padding: 1px 3px 0px 0px;
+    text-indent: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(255,255,255,0);
+    border-radius: 5px!important;
+    border: 0;
+    font-size: 10px;
+    text-transform: none;
+    line-height: 10px;
+    font-family: arial;
+    transition: all .6s ease-out; }
+
+
+/* SWEET FLAIR */
+
+.flair-sweet:hover {
+  max-width: 250px;
+  width: auto;
+  background-color: #bf73d7;
+  color: #fff;
+  padding: 1px 2px 0px 6px;
+  background-repeat: no-repeat;
+  transition: all .6s ease-in; }
+
+.flair-sweet {
+  background: url(%%sweet%%);
+  background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 10px;
+    max-width: 10px;
+    width: auto;
+    margin: -2px 0px;
+    padding: 1px 3px 0px 0px;
+    text-indent: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(255,255,255,0);
+    border-radius: 5px!important;
+    border: 0;
+    font-size: 10px;
+    text-transform: none;
+    line-height: 10px;
+    font-family: arial;
+    transition: all .6s ease-out; }
+
+
+
+
+  /* End of Custom CSS */
+  
+  
+/*>>>>>>END OF STYLESHEET<<<<<<*/
